@@ -56,10 +56,10 @@
     "relate_product_collection": "new-arrivals",
     "products__relate_limit": 16,
     "color_main": "#111111",
-    "color_main2": "#6fa62f",
+    "color_main2": "#00584b",
     "font_type": "google_fonts",
-    "fonts_name_2": "Jost",
-    "fonts_name_1": "Jost",
+    "fonts_name_2": "Noto Sans",
+    "fonts_name_1": "Noto Sans",
     "enable_sticky_mobile": true,
     "bgmenu_mobile": "#ffffff",
     "hd_icon_search_mb": "",
@@ -3939,6 +3939,9 @@
       },
       "header": {
         "type": "header",
+        "custom_css": [
+          "#header {padding: 20px 0;}"
+        ],
         "settings": {
           "select_hds": "header_v1",
           "hd_home_color_text": "#343434",
