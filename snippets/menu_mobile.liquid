@@ -1,10 +1,7 @@
 <div class="menu_moblie d-flex d-xl-none jsmenumobile align-items-center {% unless settings.enable_sticky_mobile %}engoc-disable-sticky{% endunless %}">
   <a href="javascript:void(0)" title="" class="menuleft">
-    <span class="iconmenu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </span>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="icon icon-menu"  viewBox="0 0 18 16"><path fill="currentColor" d="M1 .5a.5.5 0 1 0 0 1h15.71a.5.5 0 0 0 0-1zM.5 8a.5.5 0 0 1 .5-.5h15.71a.5.5 0 0 1 0 1H1A.5.5 0 0 1 .5 8m0 7a.5.5 0 0 1 .5-.5h15.71a.5.5 0 0 1 0 1H1a.5.5 0 0 1-.5-.5"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="icon icon-close" viewBox="0 0 18 17"><path fill="currentColor" d="M.865 15.978a.5.5 0 0 0 .707.707l7.433-7.431 7.579 7.282a.501.501 0 0 0 .846-.37.5.5 0 0 0-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 1 0-.707-.708L8.991 7.853 1.413.573a.5.5 0 1 0-.693.72l7.563 7.268z"></path></svg>
   </a>
   <div class="logo_menumoblie">
 
@@ -30,11 +27,11 @@
     </a>
   </div>
 </div>
-<div class="box_contentmenu_background">
-</div>
+{% comment %} <div class="box_contentmenu_background">
+</div> {% endcomment %}
 <div class="box_contentmenu">
   <div class="tab_content_menu_mobile">
-    <ul class="nav nav-tabs toptab_box_content list-unstyled mb-0" role="tablist">
+    {% comment %} <ul class="nav nav-tabs toptab_box_content list-unstyled mb-0" role="tablist">
       <li class="toptab_li">
         <a class="tab_navar active" href="#tab_menu_mobile" role="tab" data-toggle="tab">
           <span class="tab-menu-icon">
@@ -51,7 +48,7 @@
           <span class="{% if settings.enable_rtl_mode %} mr-2 {% else %}ml-2{% endif %}"> {{ 'customer.login.title' | t }}</span>
         </a>
       </li>
-    </ul>
+    </ul> {% endcomment %}
     <div class="tab-content">
       <div role="tabpanel" class="tab-pane show in active tab_children_menu" id="tab_menu_mobile">        
 
@@ -163,114 +160,10 @@
 
       </div>
       <!-- tab account login-regester-->
-      <div role="tabpanel" class="tab-pane fade" id="tab_account_mobile">
-        <div class="overlay_login-content">
-          <div class="row justify-content-center box_content_accountdestop text-center">
-
-            <div class="formlogin">
-              <div class="login_primary CustomerLoginForm">
-                <div class="login-icon">
-                  <span class="icon-icon-user"></span>
-                </div>
-                <div class="mailrrr mt-3">
-                  {% form 'customer_login' %}
-                  {{ form.errors | default_errors }}
-                  <div class="form-group">
-                    <input type="email"  class="form-control" name="customer[email]"  placeholder="{{ 'customer.login.email' | t }}" required>
-                  </div>
-                  {% if form.password_needed %}
-                  <div class="form-group">
-                    <input type="password" class="form-control"  placeholder="{{ 'customer.login.password' | t }}" name="customer[password]" required>
-                  </div>
-                  {% endif %}
-                  <div class="form-check">
-                    {% if form.password_needed %}
-                    <a href="#recover" class="RecoverPassword">{{ 'customer.login.forgot_password' | t }}</a>
-                    {% endif %}
-                  </div>
-                  <button type="submit" class="btn btn-dark w-100" value="{{ 'customer.login.log_in' | t }}">
-                    {{ 'customer.login.log_in' | t }}
-                  </button>
-                  {% endform %}
-                </div>
-                <div class="or_creat my-3">
-                  <span>{{ 'customer.login.or' | t }}</span>
-                  {% if settings.enable_rtl_mode %}
-                  <div><a href="javascript:void(0)" class="jsCreate_account">{{ 'customer.account.register_now' | t }} </a></div>
-                  {% else %}
-                  <div><a href="javascript:void(0)" class="jsCreate_account">{{ 'customer.account.register_now' | t }}</a></div>
-                  {% endif %}
-                </div>
-              </div>
-              {% form 'recover_customer_password' %}
-              {{ form.errors | default_errors }}
-              {% comment %}
-              Assign variable to be used after timber.init() is run in theme.liquid
-              {% endcomment %}
-              {% if form.posted_successfully? %}
-              {% assign resetPassword = true %}
-              {% endif %}
-              <div class="RecoverPasswordForm" style="display: none;">
-                <div class="block-login">
-                  <span>
-                    <i class="ti-reload"></i>
-                  </span>
-                  <h2 class="title24 text-center title-form-account">{{ 'customer.recover_password.title' | t }}</h2>
-                  <div class="form-group row">
-                    <div class="col-sm-12">
-                      <input type="email" class="form-control" placeholder="{{ 'customer.login.email' | t }}" name="customer[email]" {% if form.email %} value="{{ form.email }}"{% endif %} required>
-                    </div>
-                  </div>
-                  <div class="text-center mt-3">
-                    <input type="submit" class="register-button" value="{{ 'customer.recover_password.submit' | t }}">
-                  </div>
-                  <div class="table-custom create-account">
-                    <div class="text-center mt-4">
-                      <a class="HideRecoverPasswordLink" style="cursor: pointer;" class="color">{{ 'customer.recover_password.cancel' | t }}</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {% endform %}
-            </div>
-
-            <div class="form_register">
-              <div class="login_primary">
-                <div class="login-icon register-icon">
-                  <span class="ti-pencil-alt">
-                  </span>
-                </div>
-                <span class="title_resgister">{{ 'customer.register.title' | t }}</span>
-                <div class="mailrrr mt-3">
-                  {% form 'create_customer' %}
-                  {{ form.errors | default_errors }}
-                  <div class="form-group">
-                    <input type="email" placeholder="{{ 'customer.register.email' | t }}" class="form-control" name="customer[email]" {% if form.email %} value="{{ form.email }}"{% endif %} required>
-                  </div>
-                  <div class="form-group">
-                    <input type="password" class="form-control" name="customer[password]" placeholder="{{ 'customer.register.password' | t }}" required>
-                  </div>
-                  <button type="submit" class="btn btn-dark w-100" value="{{ 'customer.register.submit' | t }}">
-                    {{ 'customer.register.submit' | t }}
-                  </button>
-                  {% endform %}
-                </div>
-                <div class="or_creat my-3">
-                  <span>{{ 'customer.login.or' | t }}</span>
-                  {% if settings.enable_rtl_mode %}
-                  <div><a href="javascript:void(0)" class="jsBack_login"><i class="mr-3 ti-arrow-left"></i> {{ 'customer.login.back_to_login' | t }} </a></div>
-                  {% else %}
-                  <div><a href="javascript:void(0)" class="jsBack_login">{{ 'customer.login.back_to_login' | t }} <i class="ml-3 ti-arrow-right"></i></a></div>
-                  {% endif %}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+     
     </div>
-    <div class="close-menu-mobile text-center js-eveland-close">
+    {% comment %} <div class="close-menu-mobile text-center js-eveland-close">
       Close    
-    </div>
+    </div> {% endcomment %}
   </div>
 </div>

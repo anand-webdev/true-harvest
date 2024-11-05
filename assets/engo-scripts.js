@@ -2096,7 +2096,7 @@ var engoAutoComplate = {
             $(this).toggleClass('active');
             $('.box_contentmenu').toggleClass('active');     
             $('.box_contentmenu_background').toggleClass('active');   
-            $('body').addClass('activemenu_mobile')      
+            $('body').toggleClass('activemenu_mobile')      
           });
           $('.box_contentmenu_background').on('click', function() {
             $(this).removeClass('active');
