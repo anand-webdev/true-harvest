@@ -1,0 +1,180 @@
+<div data-section-id="{{ section.id }}" data-section-type="section-banner-v1" style="{% if section.settings.margin_top != blank %}margin-top: {{section.settings.margin_top}}px;{%endif%} {% if section.settings.margin_bottom != blank %}margin-bottom: {{section.settings.margin_bottom}}px;{% endif %}">
+  <div class="section-banner-v1 {% if section.settings.ena_padding_top %} padding_top_banner5 {% endif %}" style="background-image: url({% if section.settings.img_bg != blank %}{{section.settings.img_bg|img_url:'master'}}{% else %}//via.placeholder.com/1920x1100{% endif %});">  
+    <div class=" container container-v6 "> 
+      <div class="row banner"> 
+        <div class="col-md-6">
+          <div class="box-image">
+            {% if section.settings.img_banner1 != blank %}
+            <img loading="lazy" width="" height="" data-src="{{ section.settings.img_banner1 | image_url }}" class="lazyload img-fluid w-100" alt="_img_banner_">
+            {% else %}
+            <img loading="lazy" width="" height="" data-src="https://via.placeholder.com/590x720" class="lazyload img-fluid w-100" alt="_img_banner_">
+            {% endif %}
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="box-image">
+            {% if section.settings.img_banner2 != blank %}
+            <img loading="lazy" width="" height="" data-src="{{ section.settings.img_banner2 | image_url }}" class="lazyload img-fluid w-100" alt="_img_banner_">
+            {% else %}
+            <img loading="lazy" width="" height="" data-src="https://via.placeholder.com/590x720" class="lazyload img-fluid w-100" alt="_img_banner_">
+            {% endif %}
+          </div>
+        </div>
+        <div class="banner-content">
+          <div class="content" style="background: {{section.settings.bg_section}}">
+            {% if section.settings.title_banner != blank %}
+            <h3 class="title-banner" style="color: {{section.settings.color_title}}" >{{section.settings.title_banner}}</h3>
+            {% endif %}
+            <div class="image-wrapper">
+              {% if section.settings.image_wrapper != blank %}
+              <img loading="lazy" width="" height="" data-src="{{ section.settings.image_wrapper | image_url }}" class="lazyload img-fluid " alt="_img_banner_">
+              {% else %}
+              <img loading="lazy" width="" height="" data-src="https://via.placeholder.com/67x24" class="lazyload img-fluid " alt="_img_banner_">
+              {% endif %}
+            </div>
+            
+            {% if section.settings.button_banner != blank %}
+            <a href="{{section.settings.url_banner}}" class="button-shop button-shop-{{ section.id }}" title="">{{section.settings.button_banner}}</a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .section-banner-v1 .content .button-shop-{{ section.id }} {
+    color: {{section.settings.color_btn}};
+    background: {{section.settings.bg_btn}};
+  }
+  .section-banner-v1 .content .button-shop-{{ section.id }}:hover {
+    color: {{section.settings.color_btn_hover}};
+    background: {{section.settings.bg_btn_hover}};
+  }
+</style>
+{% schema %}
+{
+"name": "BANNER V1",
+"settings": [
+    {
+      "type": "checkbox",
+      "id": "ena_padding_top",
+      "label": "Enable Add Padding Top",
+      "default": false
+    },
+    {
+      "type": "image_picker",
+      "id": "img_bg",
+      "info": "1920 x 1100px recommended",
+      "label": "Background image"
+    },
+    {
+      "type": "header",
+      "content": "Section Space"
+    },
+    {
+      "type": "text",
+      "id": "margin_top",
+      "label": "Margin Top",
+      "info": "Defined in pixels. Do not add the 'px' unit."
+    },
+    {
+      "type": "text",
+      "id": "margin_bottom",
+      "label": "Margin Bottom",
+      "info": "Defined in pixels. Do not add the 'px' unit."
+    },
+    {
+      "type": "header",
+      "content": " Banner"
+    },
+	{
+      "type": "image_picker",
+      "id": "img_banner1",
+      "label": " Image 1",
+      "info": "590x720px recommended"
+    },
+	{
+      "type": "image_picker",
+      "id": "img_banner2",
+      "label": " Image 1",
+      "info": "590x720px recommended"
+    },
+    {
+      "type": "header",
+      "content": "Contnet Banner"
+    },
+    {
+      "type": "color",
+      "id": "bg_section",
+      "label": "Bacground Section",
+      "default": "#B6872C"
+    },
+    {
+      "type": "text",
+      "id": "title_banner",
+      "label": "Title Banner",
+      "default": "Cosmetic"
+    },
+	{
+      "type": "image_picker",
+      "id": "image_wrapper",
+      "label": " Image wrapper",
+      "info": "67x24px recommended"
+    },
+	{
+      "type": "color",
+      "id": "color_title",
+      "label": "Color Title",
+      "default": "#fff"
+    },
+    {
+      "type": "text",
+      "id": "button_banner",
+      "label": "Button Banner 1",
+      "default": "Shop now"
+    },
+    {
+      "type": "header",
+      "content": "Button Banner"
+    },
+    {
+      "type": "color",
+      "id": "color_btn",
+      "label": "Color Button",
+      "default": "#fff"
+    },
+    {
+      "type": "color",
+      "id": "bg_btn",
+      "label": "Background Button",
+      "default": "#000"
+    },
+    {
+      "type": "color",
+      "id": "color_btn_hover",
+      "label": "Color Button Hover",
+      "default": "#fff"
+    },
+    {
+      "type": "color",
+      "id": "bg_btn_hover",
+      "label": "Background Button Hover",
+      "default": "#ff4545"
+    }
+  ],
+  "presets": [
+    {
+      "name": "BANNER V1",
+      "category": "HOME"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
