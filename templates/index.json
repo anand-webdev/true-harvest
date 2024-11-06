@@ -1,1 +1,150 @@
-{"sections":{"8a5123f6-3004-47cd-b23e-62771296c664":{"type":"section-slideshow-v2","blocks":{"template--18554035503383__8a5123f6-3004-47cd-b23e-62771296c664-168137585742fdeda1-0":{"type":"slideshow","settings":{"select_position_content":"right","img_slide":"shopify:\/\/shop_images\/s6.jpg","sub_title":"Discount 30%","color_sub_title":"#000000","title_slide":"Natural organic","color_title":"#000000","desc_slide":"Order online and have your products delivered<br>to your closest store for free","color_desc_slide":"#000000","btn_slide":"SHOP NOW","bg_color_block_button":"#000000","color_block_button":"#ffffff","bg_color_hover_button":"#6fa62f","color_hover_text":"#ffffff","url_btn":"shopify:\/\/collections\/all"}},"template--18554035503383__8a5123f6-3004-47cd-b23e-62771296c664-168137585742fdeda1-1":{"type":"slideshow","settings":{"select_position_content":"right","img_slide":"shopify:\/\/shop_images\/s7.jpg","sub_title":"Discount 30%","color_sub_title":"#000000","title_slide":"Fresh Vegetables","color_title":"#000000","desc_slide":"Order online and have your products delivered<br>to your closest store for free","color_desc_slide":"#000000","btn_slide":"SHOP NOW","bg_color_block_button":"#000000","color_block_button":"#ffffff","bg_color_hover_button":"#6fa62f","color_hover_text":"#ffffff","url_btn":"shopify:\/\/collections\/all"}}},"block_order":["template--18554035503383__8a5123f6-3004-47cd-b23e-62771296c664-168137585742fdeda1-0","template--18554035503383__8a5123f6-3004-47cd-b23e-62771296c664-168137585742fdeda1-1"],"settings":{"margin_top":"","margin_bottom":""}},"7df5c8b9-818f-4e09-8aff-b63e95623418":{"type":"section-product-v6","settings":{"section_layout":"banner_left","img_banner1":"shopify:\/\/shop_images\/ba15.jpg","button_1":"CLEAN VEGETABLES","url_button1":"shopify:\/\/collections\/all","color_btn":"","bg_btn":"#ffffff","color_btn_hover":"#ffffff","bg_btn_hover":"#88c000","select_collection":"new","products_limit":6,"margin_top":"","margin_bottom":""}},"6c32d6a4-a3ea-47fe-ba84-f894d105a6e0":{"type":"section-banner-v4","settings":{"margin_top":"","margin_bottom":"","url_button":"shopify:\/\/collections\/all","img_banner":"shopify:\/\/shop_images\/ba12.jpg","title_banner":"Get Every Vegetable You Need","color_title":"#ffffff","color_title_hover":"#6fa62f","content_banner":"Don’t forget to opt into Fashion News to have your offers and rewards<br> delivered right to your inbox!","color_content_banner":"#ffffff"}},"8af53773-31ea-4055-a4a9-9f9abaac0d7b":{"type":"section-product-v6","settings":{"section_layout":"banner_right","img_banner1":"shopify:\/\/shop_images\/ba14.jpg","button_1":"VEGETABLES","url_button1":"shopify:\/\/collections\/all","color_btn":"","bg_btn":"#ffffff","color_btn_hover":"#ffffff","bg_btn_hover":"#88c000","select_collection":"new","products_limit":6,"margin_top":"","margin_bottom":""}},"aa2edbde-8d8f-45e6-8271-e335a4c4ff21":{"type":"section-flash-sale","settings":{"margin_top":"70","margin_bottom":"","enable_mt":false,"select_width":"full","ena_background_image":false,"bg_color":"#f1f1f1","title_section_product":"New Arrivals","color_title":"#000000","select_collection":"new","products_limit":10,"color_title_product":"#000000","color_price":"#979797"}},"64e47216-8c4c-4581-9d18-6f61f2b49b52":{"type":"section-blog-v1","settings":{"margin_top":"","margin_bottom":"","section_title":"Our Blogs","color_title":"#222","select_blog":"news","blogs_limit":3,"enable_category":true,"enable_date":true,"enable_title":true,"enable_excerpt":true,"ena_btn_readmore":true}}},"order":["8a5123f6-3004-47cd-b23e-62771296c664","7df5c8b9-818f-4e09-8aff-b63e95623418","6c32d6a4-a3ea-47fe-ba84-f894d105a6e0","8af53773-31ea-4055-a4a9-9f9abaac0d7b","aa2edbde-8d8f-45e6-8271-e335a4c4ff21","64e47216-8c4c-4581-9d18-6f61f2b49b52"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "8a5123f6-3004-47cd-b23e-62771296c664": {
+      "type": "section-slideshow-v2",
+      "blocks": {
+        "template--18554035503383__8a5123f6-3004-47cd-b23e-62771296c664-168137585742fdeda1-0": {
+          "type": "slideshow",
+          "settings": {
+            "select_position_content": "right",
+            "img_slide": "shopify://shop_images/elegant-skin-care-banner-design.jpg",
+            "sub_title": "Discount 30%",
+            "color_sub_title": "#000000",
+            "title_slide": "Natural organic",
+            "color_title": "#000000",
+            "desc_slide": "Order online and have your products delivered<br>to your closest store for free",
+            "color_desc_slide": "#000000",
+            "btn_slide": "SHOP NOW",
+            "bg_color_block_button": "#000000",
+            "color_block_button": "#ffffff",
+            "bg_color_hover_button": "#6fa62f",
+            "color_hover_text": "#ffffff",
+            "url_btn": "shopify://collections/all"
+          }
+        },
+        "template--18554035503383__8a5123f6-3004-47cd-b23e-62771296c664-168137585742fdeda1-1": {
+          "type": "slideshow",
+          "settings": {
+            "select_position_content": "right",
+            "img_slide": "shopify://shop_images/elegant-skin-care-banner-design.jpg",
+            "sub_title": "Discount 30%",
+            "color_sub_title": "#000000",
+            "title_slide": "Fresh Vegetables",
+            "color_title": "#000000",
+            "desc_slide": "Order online and have your products delivered<br>to your closest store for free",
+            "color_desc_slide": "#000000",
+            "btn_slide": "SHOP NOW",
+            "bg_color_block_button": "#000000",
+            "color_block_button": "#ffffff",
+            "bg_color_hover_button": "#6fa62f",
+            "color_hover_text": "#ffffff",
+            "url_btn": "shopify://collections/all"
+          }
+        }
+      },
+      "block_order": [
+        "template--18554035503383__8a5123f6-3004-47cd-b23e-62771296c664-168137585742fdeda1-0",
+        "template--18554035503383__8a5123f6-3004-47cd-b23e-62771296c664-168137585742fdeda1-1"
+      ],
+      "settings": {
+        "margin_top": "",
+        "margin_bottom": ""
+      }
+    },
+    "7df5c8b9-818f-4e09-8aff-b63e95623418": {
+      "type": "section-product-v6",
+      "settings": {
+        "section_layout": "banner_left",
+        "button_1": "CLEAN VEGETABLES",
+        "url_button1": "shopify://collections/all",
+        "color_btn": "",
+        "bg_btn": "#ffffff",
+        "color_btn_hover": "#ffffff",
+        "bg_btn_hover": "#88c000",
+        "select_collection": "new",
+        "products_limit": 6,
+        "margin_top": "",
+        "margin_bottom": ""
+      }
+    },
+    "6c32d6a4-a3ea-47fe-ba84-f894d105a6e0": {
+      "type": "section-banner-v4",
+      "settings": {
+        "margin_top": "",
+        "margin_bottom": "",
+        "url_button": "shopify://collections/all",
+        "title_banner": "Get Every Vegetable You Need",
+        "color_title": "#ffffff",
+        "color_title_hover": "#6fa62f",
+        "content_banner": "Don’t forget to opt into Fashion News to have your offers and rewards<br> delivered right to your inbox!",
+        "color_content_banner": "#ffffff"
+      }
+    },
+    "8af53773-31ea-4055-a4a9-9f9abaac0d7b": {
+      "type": "section-product-v6",
+      "settings": {
+        "section_layout": "banner_right",
+        "button_1": "VEGETABLES",
+        "url_button1": "shopify://collections/all",
+        "color_btn": "",
+        "bg_btn": "#ffffff",
+        "color_btn_hover": "#ffffff",
+        "bg_btn_hover": "#88c000",
+        "select_collection": "new",
+        "products_limit": 6,
+        "margin_top": "",
+        "margin_bottom": ""
+      }
+    },
+    "aa2edbde-8d8f-45e6-8271-e335a4c4ff21": {
+      "type": "section-flash-sale",
+      "settings": {
+        "margin_top": "70",
+        "margin_bottom": "",
+        "enable_mt": false,
+        "select_width": "full",
+        "ena_background_image": false,
+        "bg_color": "#f1f1f1",
+        "title_section_product": "New Arrivals",
+        "color_title": "#000000",
+        "select_collection": "new",
+        "products_limit": 10,
+        "color_title_product": "#000000",
+        "color_price": "#979797"
+      }
+    },
+    "64e47216-8c4c-4581-9d18-6f61f2b49b52": {
+      "type": "section-blog-v1",
+      "settings": {
+        "margin_top": "",
+        "margin_bottom": "",
+        "section_title": "Our Blogs",
+        "color_title": "#222222",
+        "select_blog": "news",
+        "blogs_limit": 3,
+        "enable_category": true,
+        "enable_date": true,
+        "enable_title": true,
+        "enable_excerpt": true,
+        "ena_btn_readmore": true
+      }
+    }
+  },
+  "order": [
+    "8a5123f6-3004-47cd-b23e-62771296c664",
+    "7df5c8b9-818f-4e09-8aff-b63e95623418",
+    "6c32d6a4-a3ea-47fe-ba84-f894d105a6e0",
+    "8af53773-31ea-4055-a4a9-9f9abaac0d7b",
+    "aa2edbde-8d8f-45e6-8271-e335a4c4ff21",
+    "64e47216-8c4c-4581-9d18-6f61f2b49b52"
+  ]
+}
