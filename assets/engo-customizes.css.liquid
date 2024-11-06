@@ -18169,7 +18169,7 @@ body.cartover {
 }
 
 .box_contentmenu {
-  height: 100%;
+  height: calc(100vh - 65px);
   width: 100%;
   top: 0;
   left: -320px;
@@ -18181,7 +18181,10 @@ body.cartover {
   transition: all .3s ease;
   background-color: #fff;
   top: 65px;
-  border-top: 1px solid #ededed
+  border-top: 1px solid #ededed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .box_contentmenu.active {
@@ -18212,7 +18215,7 @@ body.cartover {
 
 .box_contentmenu .tab_content_menu_mobile {
   width: 100%;
-  height: 100%
+  /* height: 100% */
 }
 
 .box_contentmenu .tab_content_menu_mobile .nav-tabs {
@@ -18301,7 +18304,7 @@ body.cartover {
 .box_contentmenu .tab_content_menu_mobile .tab-content {
   width: 100%;
   position: relative;
-  height: calc(100% - 100px);
+  /* height: calc(100% - 100px); */
   overflow: auto;
   overflow-x: hidden
 }
@@ -18748,6 +18751,13 @@ body.cartover {
   font-size: 12px
 }
 
+.box_contentmenu .mobile-menu-footer{
+  padding: 1rem;
+}
+.box_contentmenu .mobile-menu-footer .mobile-menu-login {
+  height: 2rem;
+  font-size: 1.2rem;
+}
 .popup {
   height: 100%;
   left: 0;

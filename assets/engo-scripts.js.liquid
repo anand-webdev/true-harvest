@@ -2096,7 +2096,13 @@ var engoAutoComplate = {
             $(this).toggleClass('active');
             $('.box_contentmenu').toggleClass('active');     
             $('.box_contentmenu_background').toggleClass('active');   
-            $('body').toggleClass('activemenu_mobile')      
+            $('body').toggleClass('activemenu_mobile')   
+            console.log("Classes >>> ", $(this).hasClass('active'))
+            if($(this).hasClass('active')) {
+              $('body').css('overflow', 'hidden')
+            } else {
+              $('body').css('overflow', 'auto')
+            }
           });
           $('.box_contentmenu_background').on('click', function() {
             $(this).removeClass('active');
