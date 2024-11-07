@@ -35886,3 +35886,53 @@ a.back-to-top:hover::before{
 .p-30 {
   padding: 0 30px;
 }
+
+
+/* We Believe in Section */
+.we-believe-in {
+  background: #f3f3f3;
+  padding: 3rem 0;
+
+}
+.we-believe-in h1 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.wbi-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 3rem;
+}
+
+.wbi-card {
+  text-align: center;
+}
+
+.wbi-wrapper .wbi-card .wbi-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.wbi-wrapper .wbi-icon {
+  width: 5rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 767px) {
+  .we-believe-in h1 {
+    font-size: 2rem;
+  }
+  .wbi-wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1.5rem;
+  }
+  .wbi-wrapper .wbi-card .wbi-title {
+    font-size: 1rem;
+  }
+  .wbi-wrapper .wbi-card .wbi-content {
+    font-size: 0.8rem;
+  }
+}
+
