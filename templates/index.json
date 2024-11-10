@@ -60,21 +60,17 @@
         "margin_bottom": ""
       }
     },
-    "aa2edbde-8d8f-45e6-8271-e335a4c4ff21": {
-      "type": "section-flash-sale",
+    "section_product_v1_PiWCfk": {
+      "type": "section-product-v1",
       "settings": {
+        "ena_container": false,
+        "title_heading": "True Harvest's Favorites",
+        "color_title": "#222",
+        "sub-title1": "Don't Miss The Featured Deals",
+        "select_collection": "wood-pressed-oils",
+        "products_limit": 3,
         "margin_top": "",
-        "margin_bottom": "",
-        "enable_mt": false,
-        "select_width": "full",
-        "ena_background_image": false,
-        "bg_color": "#f1f1f1",
-        "title_section_product": "New Arrivals",
-        "color_title": "#000000",
-        "select_collection": "new",
-        "products_limit": 10,
-        "color_title_product": "#000000",
-        "color_price": "#979797"
+        "margin_bottom": ""
       }
     },
     "6c32d6a4-a3ea-47fe-ba84-f894d105a6e0": {
@@ -88,22 +84,6 @@
         "color_title_hover": "#6fa62f",
         "content_banner": "Don’t forget to opt into Fashion News to have your offers and rewards<br> delivered right to your inbox!",
         "color_content_banner": "#ffffff"
-      }
-    },
-    "64e47216-8c4c-4581-9d18-6f61f2b49b52": {
-      "type": "section-blog-v1",
-      "settings": {
-        "margin_top": "",
-        "margin_bottom": "",
-        "section_title": "Our Blogs",
-        "color_title": "#222222",
-        "select_blog": "news",
-        "blogs_limit": 3,
-        "enable_category": true,
-        "enable_date": true,
-        "enable_title": true,
-        "enable_excerpt": true,
-        "ena_btn_readmore": true
       }
     },
     "reviews_bGJqFz": {
@@ -166,13 +146,29 @@
       "settings": {
         "title": "Testimonials"
       }
+    },
+    "64e47216-8c4c-4581-9d18-6f61f2b49b52": {
+      "type": "section-blog-v1",
+      "settings": {
+        "margin_top": "",
+        "margin_bottom": "",
+        "section_title": "Our Blogs",
+        "color_title": "#222222",
+        "select_blog": "news",
+        "blogs_limit": 3,
+        "enable_category": true,
+        "enable_date": true,
+        "enable_title": true,
+        "enable_excerpt": true,
+        "ena_btn_readmore": true
+      }
     }
   },
   "order": [
     "8a5123f6-3004-47cd-b23e-62771296c664",
-    "aa2edbde-8d8f-45e6-8271-e335a4c4ff21",
+    "section_product_v1_PiWCfk",
     "6c32d6a4-a3ea-47fe-ba84-f894d105a6e0",
-    "64e47216-8c4c-4581-9d18-6f61f2b49b52",
-    "reviews_bGJqFz"
+    "reviews_bGJqFz",
+    "64e47216-8c4c-4581-9d18-6f61f2b49b52"
   ]
 }
