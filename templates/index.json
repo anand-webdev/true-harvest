@@ -137,6 +137,43 @@
         "enable_excerpt": true,
         "ena_btn_readmore": true
       }
+    },
+    "section_testimonial_v1_yBHefk": {
+      "type": "section-testimonial-v1",
+      "blocks": {
+        "testimonial_6d7Xz7": {
+          "type": "testimonial",
+          "settings": {
+            "block_name": "DESTINEE",
+            "color_block_name": "#000",
+            "block_des": "Marketing Personal",
+            "color_block_des": "#c6cad0",
+            "block_content": "Saved our business! We have no regrets! Thanks for the great service. This template is worth much more than I paid Saved our business! We have no regrets!",
+            "color_block_content": "#000"
+          }
+        },
+        "testimonial_mTefcr": {
+          "type": "testimonial",
+          "settings": {
+            "block_name": "DESTINEE",
+            "color_block_name": "#000",
+            "block_des": "Marketing Personal",
+            "color_block_des": "#c6cad0",
+            "block_content": "Saved our business! We have no regrets! Thanks for the great service. This template is worth much more than I paid Saved our business! We have no regrets!",
+            "color_block_content": "#000"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_6d7Xz7",
+        "testimonial_mTefcr"
+      ],
+      "settings": {
+        "margin_top": "",
+        "margin_bottom": "",
+        "ena_bgimg": true,
+        "bg_color": ""
+      }
     }
   },
   "order": [
@@ -145,6 +182,7 @@
     "6c32d6a4-a3ea-47fe-ba84-f894d105a6e0",
     "8af53773-31ea-4055-a4a9-9f9abaac0d7b",
     "aa2edbde-8d8f-45e6-8271-e335a4c4ff21",
-    "64e47216-8c4c-4581-9d18-6f61f2b49b52"
+    "64e47216-8c4c-4581-9d18-6f61f2b49b52",
+    "section_testimonial_v1_yBHefk"
   ]
 }
