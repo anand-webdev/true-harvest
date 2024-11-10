@@ -60,20 +60,21 @@
         "margin_bottom": ""
       }
     },
-    "7df5c8b9-818f-4e09-8aff-b63e95623418": {
-      "type": "section-product-v6",
+    "aa2edbde-8d8f-45e6-8271-e335a4c4ff21": {
+      "type": "section-flash-sale",
       "settings": {
-        "section_layout": "banner_left",
-        "button_1": "CLEAN VEGETABLES",
-        "url_button1": "shopify://collections/all",
-        "color_btn": "",
-        "bg_btn": "#ffffff",
-        "color_btn_hover": "#ffffff",
-        "bg_btn_hover": "#88c000",
-        "select_collection": "new",
-        "products_limit": 6,
         "margin_top": "",
-        "margin_bottom": ""
+        "margin_bottom": "",
+        "enable_mt": false,
+        "select_width": "full",
+        "ena_background_image": false,
+        "bg_color": "#f1f1f1",
+        "title_section_product": "New Arrivals",
+        "color_title": "#000000",
+        "select_collection": "new",
+        "products_limit": 10,
+        "color_title_product": "#000000",
+        "color_price": "#979797"
       }
     },
     "6c32d6a4-a3ea-47fe-ba84-f894d105a6e0": {
@@ -87,39 +88,6 @@
         "color_title_hover": "#6fa62f",
         "content_banner": "Don’t forget to opt into Fashion News to have your offers and rewards<br> delivered right to your inbox!",
         "color_content_banner": "#ffffff"
-      }
-    },
-    "8af53773-31ea-4055-a4a9-9f9abaac0d7b": {
-      "type": "section-product-v6",
-      "settings": {
-        "section_layout": "banner_right",
-        "button_1": "VEGETABLES",
-        "url_button1": "shopify://collections/all",
-        "color_btn": "",
-        "bg_btn": "#ffffff",
-        "color_btn_hover": "#ffffff",
-        "bg_btn_hover": "#88c000",
-        "select_collection": "new",
-        "products_limit": 6,
-        "margin_top": "",
-        "margin_bottom": ""
-      }
-    },
-    "aa2edbde-8d8f-45e6-8271-e335a4c4ff21": {
-      "type": "section-flash-sale",
-      "settings": {
-        "margin_top": "70",
-        "margin_bottom": "",
-        "enable_mt": false,
-        "select_width": "full",
-        "ena_background_image": false,
-        "bg_color": "#f1f1f1",
-        "title_section_product": "New Arrivals",
-        "color_title": "#000000",
-        "select_collection": "new",
-        "products_limit": 10,
-        "color_title_product": "#000000",
-        "color_price": "#979797"
       }
     },
     "64e47216-8c4c-4581-9d18-6f61f2b49b52": {
@@ -138,51 +106,73 @@
         "ena_btn_readmore": true
       }
     },
-    "section_testimonial_v1_yBHefk": {
-      "type": "section-testimonial-v1",
+    "reviews_bGJqFz": {
+      "type": "reviews",
       "blocks": {
-        "testimonial_6d7Xz7": {
-          "type": "testimonial",
+        "review_yCtCek": {
+          "type": "review",
           "settings": {
-            "block_name": "DESTINEE",
-            "color_block_name": "#000",
-            "block_des": "Marketing Personal",
-            "color_block_des": "#c6cad0",
-            "block_content": "Saved our business! We have no regrets! Thanks for the great service. This template is worth much more than I paid Saved our business! We have no regrets!",
-            "color_block_content": "#000"
+            "title": "Testimonial name",
+            "job": "Ann Smith",
+            "stars": 5,
+            "text": "<p>Blood bank canine teeth larynx occupational therapist oncologist optician plaque spinal tap stat strep screen violence joints symptoms x-ray...</p>"
           }
         },
-        "testimonial_mTefcr": {
-          "type": "testimonial",
+        "review_kmkJCU": {
+          "type": "review",
           "settings": {
-            "block_name": "DESTINEE",
-            "color_block_name": "#000",
-            "block_des": "Marketing Personal",
-            "color_block_des": "#c6cad0",
-            "block_content": "Saved our business! We have no regrets! Thanks for the great service. This template is worth much more than I paid Saved our business! We have no regrets!",
-            "color_block_content": "#000"
+            "title": "Testimonial name",
+            "job": "Ann Smith",
+            "stars": 5,
+            "text": "<p>Blood bank canine teeth larynx occupational therapist oncologist optician plaque spinal tap stat strep screen violence joints symptoms x-ray...</p>"
+          }
+        },
+        "review_mDrCQ6": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/food_1123.png",
+            "title": "Testimonial name",
+            "job": "Ann Smith",
+            "stars": 5,
+            "text": "<p>Blood bank canine teeth larynx occupational therapist oncologist optician plaque spinal tap stat strep screen violence joints symptoms x-ray...</p>"
+          }
+        },
+        "review_FUfxrc": {
+          "type": "review",
+          "settings": {
+            "title": "Testimonial name",
+            "job": "Ann Smith",
+            "stars": 5,
+            "text": "<p>Blood bank canine teeth larynx occupational therapist oncologist optician plaque spinal tap stat strep screen violence joints symptoms x-ray...</p>"
+          }
+        },
+        "review_yVNFMa": {
+          "type": "review",
+          "settings": {
+            "title": "Testimonial name",
+            "job": "Ann Smith",
+            "stars": 5,
+            "text": "<p>Blood bank canine teeth larynx occupational therapist oncologist optician plaque spinal tap stat strep screen violence joints symptoms x-ray...</p>"
           }
         }
       },
       "block_order": [
-        "testimonial_6d7Xz7",
-        "testimonial_mTefcr"
+        "review_yCtCek",
+        "review_kmkJCU",
+        "review_mDrCQ6",
+        "review_FUfxrc",
+        "review_yVNFMa"
       ],
       "settings": {
-        "margin_top": "",
-        "margin_bottom": "",
-        "ena_bgimg": true,
-        "bg_color": ""
+        "title": "Testimonials"
       }
     }
   },
   "order": [
     "8a5123f6-3004-47cd-b23e-62771296c664",
-    "7df5c8b9-818f-4e09-8aff-b63e95623418",
-    "6c32d6a4-a3ea-47fe-ba84-f894d105a6e0",
-    "8af53773-31ea-4055-a4a9-9f9abaac0d7b",
     "aa2edbde-8d8f-45e6-8271-e335a4c4ff21",
+    "6c32d6a4-a3ea-47fe-ba84-f894d105a6e0",
     "64e47216-8c4c-4581-9d18-6f61f2b49b52",
-    "section_testimonial_v1_yBHefk"
+    "reviews_bGJqFz"
   ]
 }
