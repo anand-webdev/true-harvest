@@ -73,6 +73,12 @@
         "margin_bottom": ""
       }
     },
+    "we_believe_in_Vdj6wU": {
+      "type": "we-believe-in",
+      "settings": {
+        "title": "We Believe In"
+      }
+    },
     "6c32d6a4-a3ea-47fe-ba84-f894d105a6e0": {
       "type": "section-banner-v4",
       "settings": {
@@ -167,6 +173,7 @@
   "order": [
     "8a5123f6-3004-47cd-b23e-62771296c664",
     "section_product_v1_PiWCfk",
+    "we_believe_in_Vdj6wU",
     "6c32d6a4-a3ea-47fe-ba84-f894d105a6e0",
     "reviews_bGJqFz",
     "64e47216-8c4c-4581-9d18-6f61f2b49b52"

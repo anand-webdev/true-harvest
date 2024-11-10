@@ -393,7 +393,7 @@
     "copyright_fv6": "Foden Online Store",
     "po_style": "po_swatchs",
     "swatch_style": "default",
-    "product_style": "style_9",
+    "product_style": "style_6",
     "show_new_label": true,
     "product_new_time": "2023-10-10-10-10-10",
     "new_label_name": "New",
@@ -4075,8 +4075,7 @@
       },
       "page-cart": {
         "type": "page-cart",
-        "settings": {
-        }
+        "settings": {}
       },
       "page-wishlist": {
         "type": "page-wishlist",
@@ -4184,8 +4183,7 @@
           "1569385470140",
           "1569397571645"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "page-lookbook-v2": {
         "type": "page-lookbook-v2",
@@ -6062,8 +6060,7 @@
           "6c442cf4-9641-4ebf-9061-bf80376fef48",
           "19056995-bbff-4657-8f76-71500ab74cdd"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "reviews": {
         "type": "reviews",
@@ -6135,8 +6132,7 @@
       "14060646107696862457": {
         "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       }
     }
   },
