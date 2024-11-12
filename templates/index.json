@@ -60,15 +60,16 @@
         "margin_bottom": ""
       }
     },
-    "section_product_v1_PiWCfk": {
-      "type": "section-product-v1",
+    "section_product_v3_8tTqGa": {
+      "type": "section-product-v3",
       "settings": {
         "ena_container": false,
-        "title_heading": "True Harvest's Favorites",
+        "title_heading": "Best Seller",
         "color_title": "#222",
-        "sub-title1": "Don't Miss The Featured Deals",
+        "sub_title": "Best Seller Product This Week!",
+        "color_sub_title": "#666666",
         "select_collection": "wood-pressed-oils",
-        "products_limit": 3,
+        "products_limit": 8,
         "margin_top": "",
         "margin_bottom": ""
       }
@@ -172,7 +173,7 @@
   },
   "order": [
     "8a5123f6-3004-47cd-b23e-62771296c664",
-    "section_product_v1_PiWCfk",
+    "section_product_v3_8tTqGa",
     "we_believe_in_Vdj6wU",
     "6c32d6a4-a3ea-47fe-ba84-f894d105a6e0",
     "reviews_bGJqFz",
