@@ -82,15 +82,20 @@
     },
     "6c32d6a4-a3ea-47fe-ba84-f894d105a6e0": {
       "type": "section-banner-v4",
+      "custom_css": [
+        ".content {width: 70%; margin: 0 auto;}",
+        "@media (max-width: 767px) {.title-banner {font-size: 2rem; } .content {width: 90%; } .banner-v7 {padding: 4rem 0; }}"
+      ],
       "settings": {
         "margin_top": "",
         "margin_bottom": "",
         "url_button": "shopify://collections/all",
-        "title_banner": "Get Every Vegetable You Need",
-        "color_title": "#ffffff",
+        "img_banner": "shopify://shop_images/Untitled_design.png",
+        "title_banner": "Experience the Essence of Nature",
+        "color_title": "#1a2018",
         "color_title_hover": "#6fa62f",
-        "content_banner": "Don’t forget to opt into Fashion News to have your offers and rewards<br> delivered right to your inbox!",
-        "color_content_banner": "#ffffff"
+        "content_banner": "Discover the purity of wood-pressed oils with True Harvest. Simple, natural, and crafted with care—our oils bring you closer to nature in every drop.",
+        "color_content_banner": "#2a431c"
       }
     },
     "reviews_bGJqFz": {
