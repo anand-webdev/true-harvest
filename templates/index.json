@@ -60,15 +60,16 @@
         "margin_bottom": ""
       }
     },
-    "section_product_v1_PiWCfk": {
-      "type": "section-product-v1",
+    "section_product_v3_8tTqGa": {
+      "type": "section-product-v3",
       "settings": {
         "ena_container": false,
-        "title_heading": "True Harvest's Favorites",
-        "color_title": "#222",
-        "sub-title1": "Don't Miss The Featured Deals",
+        "title_heading": "Best Seller",
+        "color_title": "#222222",
+        "sub_title": "Best Seller Product This Week!",
+        "color_sub_title": "#666666",
         "select_collection": "wood-pressed-oils",
-        "products_limit": 3,
+        "products_limit": 8,
         "margin_top": "",
         "margin_bottom": ""
       }
@@ -81,15 +82,20 @@
     },
     "6c32d6a4-a3ea-47fe-ba84-f894d105a6e0": {
       "type": "section-banner-v4",
+      "custom_css": [
+        ".content {width: 70%; margin: 0 auto;}",
+        "@media (max-width: 767px) {.title-banner {font-size: 2rem; } .content {width: 90%; } .banner-v7 {padding: 4rem 0; }}"
+      ],
       "settings": {
         "margin_top": "",
-        "margin_bottom": "",
+        "margin_bottom": "100",
         "url_button": "shopify://collections/all",
-        "title_banner": "Get Every Vegetable You Need",
-        "color_title": "#ffffff",
+        "img_banner": "shopify://shop_images/Untitled_design.png",
+        "title_banner": "Experience the Essence of Nature",
+        "color_title": "#1a2018",
         "color_title_hover": "#6fa62f",
-        "content_banner": "Don’t forget to opt into Fashion News to have your offers and rewards<br> delivered right to your inbox!",
-        "color_content_banner": "#ffffff"
+        "content_banner": "Discover the purity of wood-pressed oils with True Harvest. Simple, natural, and crafted with care—our oils bring you closer to nature in every drop.",
+        "color_content_banner": "#2a431c"
       }
     },
     "reviews_bGJqFz": {
@@ -98,47 +104,83 @@
         "review_yCtCek": {
           "type": "review",
           "settings": {
-            "title": "Testimonial name",
+            "title": "Divya R",
             "job": "Ann Smith",
             "stars": 5,
-            "text": "<p>Blood bank canine teeth larynx occupational therapist oncologist optician plaque spinal tap stat strep screen violence joints symptoms x-ray...</p>"
+            "text": "<p>True Harvest's coconut oil has a pure, natural aroma that's unlike anything I've tried before. It feels amazing on my skin and leaves it soft and hydrated without any stickiness. I love knowing it’s made with care!</p>"
           }
         },
         "review_kmkJCU": {
           "type": "review",
           "settings": {
-            "title": "Testimonial name",
+            "title": "Arvind P",
             "job": "Ann Smith",
             "stars": 5,
-            "text": "<p>Blood bank canine teeth larynx occupational therapist oncologist optician plaque spinal tap stat strep screen violence joints symptoms x-ray...</p>"
+            "text": "<p>This is the first time I've used wood-pressed sesame oil, and True Harvest has set a high standard! It’s perfect for our daily cooking, giving our dishes a rich, authentic flavor. Definitely a kitchen essential now.</p>"
           }
         },
         "review_mDrCQ6": {
           "type": "review",
           "settings": {
             "image": "shopify://shop_images/food_1123.png",
-            "title": "Testimonial name",
+            "title": "Lakshmi V",
             "job": "Ann Smith",
             "stars": 5,
-            "text": "<p>Blood bank canine teeth larynx occupational therapist oncologist optician plaque spinal tap stat strep screen violence joints symptoms x-ray...</p>"
+            "text": "<p>The groundnut oil from True Harvest is incredible! I’ve used it in salads and stir-fries, and the taste is unbeatable. Knowing it’s wood-pressed and pure makes it even better. A must-have!</p>"
           }
         },
         "review_FUfxrc": {
           "type": "review",
           "settings": {
-            "title": "Testimonial name",
+            "title": "Rajesh M",
             "job": "Ann Smith",
             "stars": 5,
-            "text": "<p>Blood bank canine teeth larynx occupational therapist oncologist optician plaque spinal tap stat strep screen violence joints symptoms x-ray...</p>"
+            "text": "<p>True Harvest's coconut oil is top-notch for my hair care routine. It’s thick, rich, and adds a lovely natural shine. I’ve noticed healthier hair within weeks. Thanks for such a high-quality product!</p>"
           }
         },
         "review_yVNFMa": {
           "type": "review",
           "settings": {
-            "title": "Testimonial name",
+            "title": "Sneha S",
             "job": "Ann Smith",
             "stars": 5,
-            "text": "<p>Blood bank canine teeth larynx occupational therapist oncologist optician plaque spinal tap stat strep screen violence joints symptoms x-ray...</p>"
+            "text": "<p>The sesame oil has a wonderful nutty flavor that’s brought my homemade recipes to life. The fact that it's pure and wood-pressed makes it even more enjoyable. Highly recommended for health-conscious cooks!</p>"
+          }
+        },
+        "review_hkJBgJ": {
+          "type": "review",
+          "settings": {
+            "title": "Karthik N",
+            "job": "Ann Smith",
+            "stars": 5,
+            "text": "<p>I bought True Harvest’s groundnut oil, and I’m impressed with its purity. My fried dishes taste lighter, with none of the heaviness. It’s now a staple in my cooking!</p>"
+          }
+        },
+        "review_NdwmmP": {
+          "type": "review",
+          "settings": {
+            "title": "Priya R",
+            "job": "Ann Smith",
+            "stars": 5,
+            "text": "<p>This coconut oil is perfect for everything—from cooking to skin care! I’ve even used it as a moisturizer. It’s light, non-greasy, and smells divine. True Harvest has won my trust.</p>"
+          }
+        },
+        "review_qzwjLA": {
+          "type": "review",
+          "settings": {
+            "title": "Sathya K",
+            "job": "Ann Smith",
+            "stars": 5,
+            "text": "<p>True Harvest sesame oil adds such a fresh taste to our meals. It’s hard to go back to anything else after trying this wood-pressed version. Perfect for both cooking and salad dressings!</p>"
+          }
+        },
+        "review_gD36YN": {
+          "type": "review",
+          "settings": {
+            "title": "Meena T",
+            "job": "Ann Smith",
+            "stars": 5,
+            "text": "<p>I’m so pleased with True Harvest's groundnut oil! It’s smooth, full-flavored, and healthy. Great for cooking all kinds of Indian dishes, and I love that it’s all-natural. Truly pure!</p>"
           }
         }
       },
@@ -147,7 +189,16 @@
         "review_kmkJCU",
         "review_mDrCQ6",
         "review_FUfxrc",
-        "review_yVNFMa"
+        "review_yVNFMa",
+        "review_hkJBgJ",
+        "review_NdwmmP",
+        "review_qzwjLA",
+        "review_gD36YN"
+      ],
+      "custom_css": [
+        ".review__image__wrapper img {display: none;}",
+        ".review__image__wrapper .content {padding-left: 0;}",
+        ".review__card .content .review__title {display: none;}"
       ],
       "settings": {
         "title": "Testimonials"
@@ -172,7 +223,7 @@
   },
   "order": [
     "8a5123f6-3004-47cd-b23e-62771296c664",
-    "section_product_v1_PiWCfk",
+    "section_product_v3_8tTqGa",
     "we_believe_in_Vdj6wU",
     "6c32d6a4-a3ea-47fe-ba84-f894d105a6e0",
     "reviews_bGJqFz",

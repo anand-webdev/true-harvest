@@ -58,8 +58,8 @@
     "color_main": "#111111",
     "color_main2": "#2a431c",
     "font_type": "google_fonts",
-    "fonts_name_2": "Noto Sans",
-    "fonts_name_1": "Noto Sans",
+    "fonts_name_2": "Roboto Slab",
+    "fonts_name_1": "Roboto Slab",
     "enable_sticky_mobile": true,
     "bgmenu_mobile": "#ffffff",
     "hd_icon_search_mb": "",
@@ -353,7 +353,7 @@
     "titlecolum_fv4_5": "Newsletters",
     "content_colum_fv4_4": "Be the first who learns about our<br>great promotions!",
     "enable_fv4_bottom": true,
-    "fv4_main_logo": "shopify://shop_images/logo.png",
+    "fv4_main_logo": "shopify://shop_images/web-logo.png",
     "fv4_main_logo_maxwidth": 175,
     "logo_svg4": "",
     "fv4_bottom_payment_img": "shopify://shop_images/logoo-removebg-preview.png",
@@ -393,7 +393,7 @@
     "copyright_fv6": "Foden Online Store",
     "po_style": "po_swatchs",
     "swatch_style": "default",
-    "product_style": "style_6",
+    "product_style": "style_10",
     "show_new_label": true,
     "product_new_time": "2023-10-10-10-10-10",
     "new_label_name": "New",
@@ -3788,10 +3788,10 @@
       "footer": {
         "type": "footer",
         "settings": {
-          "select_fts": "footer_v4",
-          "ft_home_bg_footer": "#f9f9f9",
-          "ft_home_color_text": "#111111",
-          "select_fts_all": "footer_ver1",
+          "select_fts": "footer_v1",
+          "ft_home_bg_footer": "#2a431c",
+          "ft_home_color_text": "#f4f4f4",
+          "select_fts_all": "footer_ver2",
           "ft_other_bg_footer": "#ffffff",
           "ft_other_color_text": "#000000"
         }
