@@ -1,15 +1,21 @@
-<div data-section-id="{{ section.id }}" data-section-type="section-banner-v4" style="{% if section.settings.margin_top != blank %}margin-top: {{section.settings.margin_top}}px;{%endif%} {% if section.settings.margin_bottom != blank %}margin-bottom: {{section.settings.margin_bottom}}px;{% endif %}">
-  <div class="section-banner-v4 mt-all"> 
+<div
+  data-section-id="{{ section.id }}"
+  data-section-type="section-banner-v4"
+  style="{% if section.settings.margin_top != blank %}margin-top: {{section.settings.margin_top}}px;{%endif%} {% if section.settings.margin_bottom != blank %}margin-bottom: {{section.settings.margin_bottom}}px;{% endif %}"
+>
+  <div class="section-banner-v4 mt-all">
     <div class="container container-v2">
-      <div class="relative banner-v7 " style="background-image: url({% if section.settings.img_banner != blank %}{{ section.settings.img_banner | image_url }} {% else %} //via.placeholder.com/1920x700{% endif %})">
+      <div class="relative banner-v7 " style="">
         <div class="content-banner">
           <a href="{{section.settings.url_button}}">
             {% if section.settings.title_banner != blank %}
-            <h3 class="title-banner title-banner-{{ section.id }}" >{{section.settings.title_banner}}</h3>
+              <h3 class="title-banner title-banner-{{ section.id }}">{{ section.settings.title_banner }}</h3>
             {% endif %}
           </a>
           {% if section.settings.content_banner != blank %}
-          <p class="content" style="color: {{section.settings.color_content_banner}}">{{section.settings.content_banner}}</p>
+            <p class="content" style="color: {{section.settings.color_content_banner}}">
+              {{ section.settings.content_banner }}
+            </p>
           {% endif %}
         </div>
       </div>
@@ -23,6 +29,16 @@
   }
   .section-banner-v4 .banner-v7 .content-banner  .title-banner-{{ section.id }}:hover {
     color: {{section.settings.color_title_hover}};
+  }
+
+  .section-banner-v4 .banner-v7 {
+    background-image: url({% if section.settings.img_banner != blank %}{{ section.settings.img_banner | image_url }} {% else %} //via.placeholder.com/1920x700{% endif %})
+  }
+
+    @media (max-width: 767px) {
+    .section-banner-v4 .banner-v7 {
+      background-image: url({% if section.settings.mobile_img_banner != blank %}{{ section.settings.mobile_img_banner | image_url }} {% else %} //via.placeholder.com/1920x700{% endif %})
+    }
   }
 </style>
 
@@ -56,11 +72,16 @@
       "label": "URL Button Banner",
       "default": "/collections/all"
     },
-	{
+    {
       "type": "image_picker",
       "id": "img_banner",
       "label": "Background Image",
       "info": "1920 x 700px recommended"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_img_banner",
+      "label": "Mobile Background Image"
     },
     {
       "type": "text",
@@ -91,8 +112,7 @@
       "id": "color_content_banner",
       "label": "Color Contnet",
       "default": "#000"
-    }    
-    
+    }
   ],
   "presets": [
     {
