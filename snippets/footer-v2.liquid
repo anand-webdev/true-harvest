@@ -232,6 +232,12 @@
 {% if section.settings.select_fts_all == 'footer_ver2' %}
   {% unless template contains 'index' %}
     <footer class=" footer_v2">
+      <img
+        class="w-100"
+        style="margin-bottom: -3px;"
+        src="{{ "footer-top.svg" | asset_url }}"
+        alt=""
+      >
       <div class="top-footer">
         <div class="container container-v2">
           <div class="row">
