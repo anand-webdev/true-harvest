@@ -317,7 +317,7 @@
     "titlecolum_fv2_3": "Policies",
     "menu_fv2_3": "policies-menu",
     "titlecolum_fv2_4": "SUBSCRIBE",
-    "content_colum_fv2_4": "Subscribe our newsletter.",
+    "content_colum_fv2_4": "Subscribe to our newsletter.",
     "icon_sc_fv2_1": "fa fa-twitter",
     "url_sc_fv2_1": "",
     "icon_sc_fv2_2": "fa fa-dribbble",
@@ -3792,7 +3792,7 @@
           "ft_home_bg_footer": "#2a431c",
           "ft_home_color_text": "#f4f4f4",
           "select_fts_all": "footer_ver2",
-          "ft_other_bg_footer": "#ffffff",
+          "ft_other_bg_footer": "#2a431c",
           "ft_other_color_text": "#000000"
         }
       },
