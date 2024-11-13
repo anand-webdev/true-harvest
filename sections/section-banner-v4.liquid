@@ -5,7 +5,7 @@
 >
   <div class="section-banner-v4 mt-all">
     <div class="container container-v2">
-      <div class="relative banner-v7 " style="">
+      <div class="relative banner-v7 {{ section.id }}" style="">
         <div class="content-banner">
           <a href="{{section.settings.url_button}}">
             {% if section.settings.title_banner != blank %}
@@ -31,12 +31,12 @@
     color: {{section.settings.color_title_hover}};
   }
 
-  .section-banner-v4 .banner-v7 {
+  .section-banner-v4 .banner-v7.{{ section.id }} {
     background-image: url({% if section.settings.img_banner != blank %}{{ section.settings.img_banner | image_url }} {% else %} //via.placeholder.com/1920x700{% endif %})
   }
 
     @media (max-width: 767px) {
-    .section-banner-v4 .banner-v7 {
+    .section-banner-v4 .banner-v7.{{ section.id }} {
       background-image: url({% if section.settings.mobile_img_banner != blank %}{{ section.settings.mobile_img_banner | image_url }} {% else %} //via.placeholder.com/1920x700{% endif %})
     }
   }
