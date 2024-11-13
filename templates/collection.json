@@ -1,1 +1,123 @@
-{"sections":{"collection_template":{"type":"collection-template","settings":{"select_style_bread":"style_3","ena_bg_img":true,"bg_breadcrumb":"shopify:\/\/shop_images\/collection.jpg","bg_color_breadcrumb":"#ffffff","color_breadcrumb":"#ffffff","collection_layout":"infinity_scroll","prod_per_page":12,"prod_layout":"prod_grid","prod_per_row":"prod_col_3","filter_layout":"filter_push_left","sidebar_layout":"sidebar_left","ena_sticky_sidebar":true,"ena_banner_mordern":true,"bannerfull_img":"shopify:\/\/shop_images\/banner.jpg","big_title":"","mini_title":"","btn_title":"","bannerfull_url":"https:\/\/www.shopify.com\/free-trial?ref=shopifycenter","color_title":"#ffffff","ena_best_seller":false,"title_heading":"BEST SELLERS","select_collection":"frontpage","products_limit":10,"ena_filter":true,"ena_filter2":true}}},"order":["collection_template"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "section_breadcrumbs_YrCcnt": {
+      "type": "section-breadcrumbs",
+      "settings": {
+        "select_style_bread": "style_1",
+        "ena_bg_img": true,
+        "bg_breadcrumb": "shopify://shop_images/Untitled_design_1.png",
+        "bg_color_breadcrumb": "#fff",
+        "color_breadcrumb": "#000",
+        "collection_layout": "full_width"
+      }
+    },
+    "section_banner_v4_GJ8LcB": {
+      "type": "section-banner-v4",
+      "settings": {
+        "margin_top": "",
+        "margin_bottom": "",
+        "url_button": "shopify://collections/all",
+        "img_banner": "shopify://shop_images/1.png",
+        "title_banner": "",
+        "color_title": "#000",
+        "color_title_hover": "#fff",
+        "content_banner": "",
+        "color_content_banner": "#000"
+      }
+    },
+    "section_product_v4_PMyEUw": {
+      "type": "section-product-v4",
+      "custom_css": [
+        ".view-products {display: none;}"
+      ],
+      "settings": {
+        "title_heading": "",
+        "color_title": "#222",
+        "select_collection": "wood-pressed-sesame-oils",
+        "products_limit": 8,
+        "buttom_name": "ALL PRODUCTS",
+        "button_name_url": "shopify://collections/all",
+        "margin_top": "",
+        "margin_bottom": ""
+      }
+    },
+    "section_banner_v4_KCVG9w": {
+      "type": "section-banner-v4",
+      "settings": {
+        "margin_top": "",
+        "margin_bottom": "",
+        "url_button": "shopify://collections/all",
+        "img_banner": "shopify://shop_images/2.png",
+        "title_banner": "",
+        "color_title": "#000",
+        "color_title_hover": "#fff",
+        "content_banner": "",
+        "color_content_banner": "#000"
+      }
+    },
+    "section_product_v4_iURAN3": {
+      "type": "section-product-v4",
+      "custom_css": [
+        ".view-products {display: none;}"
+      ],
+      "settings": {
+        "title_heading": "",
+        "color_title": "#222",
+        "select_collection": "wood-pressed-groundnut-oils",
+        "products_limit": 8,
+        "buttom_name": "ALL PRODUCTS",
+        "button_name_url": "shopify://collections/all",
+        "margin_top": "",
+        "margin_bottom": ""
+      }
+    },
+    "section_banner_v4_aFyejf": {
+      "type": "section-banner-v4",
+      "settings": {
+        "margin_top": "",
+        "margin_bottom": "",
+        "url_button": "shopify://collections/all",
+        "img_banner": "shopify://shop_images/3.png",
+        "title_banner": "",
+        "color_title": "#000",
+        "color_title_hover": "#fff",
+        "content_banner": "",
+        "color_content_banner": "#000"
+      }
+    },
+    "section_product_v4_6qTfpw": {
+      "type": "section-product-v4",
+      "custom_css": [
+        ".view-products {display: none;}"
+      ],
+      "settings": {
+        "title_heading": "",
+        "color_title": "#222",
+        "select_collection": "wood-pressed-coconut-oils",
+        "products_limit": 8,
+        "buttom_name": "ALL PRODUCTS",
+        "button_name_url": "shopify://collections/all",
+        "margin_top": "",
+        "margin_bottom": ""
+      }
+    }
+  },
+  "order": [
+    "section_breadcrumbs_YrCcnt",
+    "section_banner_v4_GJ8LcB",
+    "section_product_v4_PMyEUw",
+    "section_banner_v4_KCVG9w",
+    "section_product_v4_iURAN3",
+    "section_banner_v4_aFyejf",
+    "section_product_v4_6qTfpw"
+  ]
+}

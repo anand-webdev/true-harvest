@@ -3799,11 +3799,6 @@
       "collection-template": {
         "type": "collection-template",
         "settings": {
-          "select_style_bread": "style_3",
-          "ena_bg_img": true,
-          "bg_breadcrumb": "shopify://shop_images/breadcup-1.jpg",
-          "bg_color_breadcrumb": "#f2f2f2",
-          "color_breadcrumb": "#ffffff",
           "collection_layout": "full_width",
           "prod_per_page": 9,
           "prod_layout": "prod_grid",
