@@ -110,7 +110,7 @@
         "buttom_name": "ALL PRODUCTS",
         "button_name_url": "shopify://collections/all",
         "margin_top": "",
-        "margin_bottom": ""
+        "margin_bottom": "60"
       }
     }
   },
