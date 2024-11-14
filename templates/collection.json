@@ -15,8 +15,8 @@
         "select_style_bread": "style_1",
         "ena_bg_img": true,
         "bg_breadcrumb": "shopify://shop_images/Untitled_design_1.png",
-        "bg_color_breadcrumb": "#fff",
-        "color_breadcrumb": "#000",
+        "bg_color_breadcrumb": "#ffffff",
+        "color_breadcrumb": "#000000",
         "collection_layout": "full_width"
       }
     },
@@ -27,11 +27,12 @@
         "margin_bottom": "",
         "url_button": "shopify://collections/all",
         "img_banner": "shopify://shop_images/1.png",
+        "mobile_img_banner": "shopify://shop_images/cat-mob-sesame.png",
         "title_banner": "",
-        "color_title": "#000",
-        "color_title_hover": "#fff",
+        "color_title": "#000000",
+        "color_title_hover": "#ffffff",
         "content_banner": "",
-        "color_content_banner": "#000"
+        "color_content_banner": "#000000"
       }
     },
     "section_product_v4_PMyEUw": {
@@ -41,7 +42,7 @@
       ],
       "settings": {
         "title_heading": "",
-        "color_title": "#222",
+        "color_title": "#222222",
         "select_collection": "wood-pressed-sesame-oils",
         "products_limit": 8,
         "buttom_name": "ALL PRODUCTS",
@@ -57,11 +58,12 @@
         "margin_bottom": "",
         "url_button": "shopify://collections/all",
         "img_banner": "shopify://shop_images/2.png",
+        "mobile_img_banner": "shopify://shop_images/cat-mob-groundnut.png",
         "title_banner": "",
-        "color_title": "#000",
-        "color_title_hover": "#fff",
+        "color_title": "#000000",
+        "color_title_hover": "#ffffff",
         "content_banner": "",
-        "color_content_banner": "#000"
+        "color_content_banner": "#000000"
       }
     },
     "section_product_v4_iURAN3": {
@@ -71,7 +73,7 @@
       ],
       "settings": {
         "title_heading": "",
-        "color_title": "#222",
+        "color_title": "#222222",
         "select_collection": "wood-pressed-groundnut-oils",
         "products_limit": 8,
         "buttom_name": "ALL PRODUCTS",
@@ -87,11 +89,12 @@
         "margin_bottom": "",
         "url_button": "shopify://collections/all",
         "img_banner": "shopify://shop_images/3.png",
+        "mobile_img_banner": "shopify://shop_images/cat-mob-coconut.png",
         "title_banner": "",
-        "color_title": "#000",
-        "color_title_hover": "#fff",
+        "color_title": "#000000",
+        "color_title_hover": "#ffffff",
         "content_banner": "",
-        "color_content_banner": "#000"
+        "color_content_banner": "#000000"
       }
     },
     "section_product_v4_6qTfpw": {
@@ -101,13 +104,13 @@
       ],
       "settings": {
         "title_heading": "",
-        "color_title": "#222",
+        "color_title": "#222222",
         "select_collection": "wood-pressed-coconut-oils",
         "products_limit": 8,
         "buttom_name": "ALL PRODUCTS",
         "button_name_url": "shopify://collections/all",
         "margin_top": "",
-        "margin_bottom": ""
+        "margin_bottom": "60"
       }
     }
   },
