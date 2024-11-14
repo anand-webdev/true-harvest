@@ -337,18 +337,20 @@
               </div>
             </div>
             <div class="col-lg-3 col-md-4 border-ft">
-              <div class="info_footer">
-                <div class="title_footer">
-                  <h4 class="mb-0 title_border">{{ settings.titlecolum_fv2_1 }}</h4>
+              {% comment %}
+                <div class="info_footer">
+                  <div class="title_footer">
+                    <h4 class="mb-0 title_border">{{ settings.titlecolum_fv2_1 }}</h4>
+                  </div>
+                  <ul class="list-unstyled mb-0">
+                    {% for link in linklists[settings.menu_fv2_1].links %}
+                      <li>
+                        <a href="{{link.url}}" title="{{link.title}}">{{ link.title }}</a>
+                      </li>
+                    {% endfor %}
+                  </ul>
                 </div>
-                <ul class="list-unstyled mb-0">
-                  {% for link in linklists[settings.menu_fv2_1].links %}
-                    <li>
-                      <a href="{{link.url}}" title="{{link.title}}">{{ link.title }}</a>
-                    </li>
-                  {% endfor %}
-                </ul>
-              </div>
+              {% endcomment %}
             </div>
             <div class="col-lg-3 col-md-4 border-ft">
               <div class="info_footer">
