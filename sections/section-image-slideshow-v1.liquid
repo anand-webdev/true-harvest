@@ -1,0 +1,103 @@
+<div
+  data-section-id="{{ section.id }}"
+  style="{% if section.settings.margin_top != blank %}margin-top: {{section.settings.margin_top}}px;{%endif%} {% if section.settings.margin_bottom != blank %}margin-bottom: {{section.settings.margin_bottom}}px;{% endif %}"
+>
+  <div class="container container-v2">
+    <div class="image-slider-v1-slide">
+      {% if section.blocks.size > 0 %}
+        {% for block in section.blocks %}
+          <div class="">
+            {% if block.settings.block_img != blank %}
+              <img
+                data-src="{{block.settings.block_img|img_url:'master'}}"
+                class="lazyload img-responsive"
+                alt="testimonial"
+              >
+            {% else %}
+              {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+            {% endif %}
+          </div>
+        {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Image Slider V1",
+  "class": "image-slider",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section Space"
+    },
+    {
+      "type": "text",
+      "id": "margin_top",
+      "label": "Margin Top",
+      "info": "Defined in pixels. Do not add the 'px' unit."
+    },
+    {
+      "type": "text",
+      "id": "margin_bottom",
+      "label": "Margin Bottom",
+      "info": "Defined in pixels. Do not add the 'px' unit."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image-block",
+      "name": "Image Block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "block_img",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image Slider V1",
+      "category": "HOME",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+
+
+    .image-slider-v1-slide .slick-slide img {
+      border-radius: 0.75rem;
+    }
+  }
+  .image-slider-v1-slide .slick-slide {
+    padding-right: 1rem;
+  }
+
+  .image-slider-v1-slide .slick-slide:last-child {
+    padding-right: 0;
+  }
+
+  .image-slider-v1-slide .slick-slide img {
+    border-radius: 1rem;
+  }
+
+   @media (max-width: 768px) {
+    .image-slider-v1-slide .slick-list {
+      padding: 0 20% 0 0 !important;
+    }
+  }
+
+  @media (max-width: 575px) {
+    .image-slider-v1-slide .slick-slide {
+      padding-right: 0.5rem;
+    }
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
