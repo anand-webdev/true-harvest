@@ -1,31 +1,48 @@
-<div data-section-id="{{ section.id }}" data-section-type="section-product-v4" style="{% if section.settings.margin_top != blank %}margin-top: {{section.settings.margin_top}}px;{%endif%} {% if section.settings.margin_bottom != blank %}margin-bottom: {{section.settings.margin_bottom}}px;{% endif %}">
+<div
+  data-section-id="{{ section.id }}"
+  data-section-type="section-product-v4"
+  style="{% if section.settings.margin_top != blank %}margin-top: {{section.settings.margin_top}}px;{%endif%} {% if section.settings.margin_bottom != blank %}margin-bottom: {{section.settings.margin_bottom}}px;{% endif %}"
+>
   <div class="section-product-v4 mt-all">
     <div class="container container-v2">
       <div class="text-center">
-        {% if section.settings.title_heading != blank%}
-        <h3 class="title_heading" style="color: {{section.settings.color_title}}">{{section.settings.title_heading}}</h3>      	
+        {% if section.settings.title_heading != blank %}
+          <h3 class="title_heading" style="color: {{section.settings.color_title}}">
+            {{ section.settings.title_heading }}
+          </h3>
         {% endif %}
       </div>
-      <div class="product_tranding engo_align row">    
+      <div class="product_tranding engo_align row">
         {% assign products_limit = section.settings.products_limit %}
         {% assign col = section.settings.select_collection %}
-        {% for product in collections[col].products limit: products_limit %}
-        <div class="col-lg-3 col-6 col-md-4">
-          {% include 'product-item-v1' %}
-        </div>
+        {% for productWithVarient in collections[col].products limit: products_limit %}
+          {% if section.settings.show_variants_seperately %}
+            {% for product in productWithVarient.variants %}
+              {% assign name = productWithVarient.title | append: ' - ' | append: product.title %}
+              <div class="col-lg-3 col-6 col-md-4">
+                {% include 'product-variant-card' %}
+              </div>
+            {% endfor %}
+          {% else %}
+            {% assign product = productWithVarient %}
+            <div class="col-lg-3 col-6 col-md-4">
+              {% include 'product-item-v1' %}
+            </div>
+          {% endif %}
+
         {% else %}
-        {% for i in (1..12) %}
-        <div class="col-lg-3 col-6 col-md-4">
-          {% include 'empty-product-item' %}
-        </div>
-        {% endfor %}
+          {% for i in (1..12) %}
+            <div class="col-lg-3 col-6 col-md-4">
+              {% include 'empty-product-item' %}
+            </div>
+          {% endfor %}
         {% endfor %}
       </div>
       <div class="row justify-content-center">
         {% if section.settings.buttom_name != blank %}
-        <div class="view-products">
-          <a href="{{section.settings.button_name_url}}" class="text-center">{{section.settings.buttom_name}}</a>
-        </div>
+          <div class="view-products">
+            <a href="{{section.settings.button_name_url}}" class="text-center">{{ section.settings.buttom_name }}</a>
+          </div>
         {% endif %}
       </div>
     </div>
@@ -35,11 +52,11 @@
 {
   "name": "PRODUCT V4",
   "settings": [
-	{
+    {
       "type": "header",
       "content": "Product 4"
     },
-	{
+    {
       "type": "text",
       "id": "title_heading",
       "label": "Title Section",
@@ -51,7 +68,7 @@
       "label": "Color",
       "default": "#222"
     },
-	{
+    {
       "type": "header",
       "content": "Info Product"
     },
@@ -60,7 +77,12 @@
       "id": "select_collection",
       "label": "Select Collection"
     },
-	{
+    {
+      "type": "checkbox",
+      "id": "show_variants_seperately",
+      "label": "Show varients as individual products"
+    },
+    {
       "type": "range",
       "id": "products_limit",
       "label": "Limit products",
@@ -69,7 +91,7 @@
       "step": 1,
       "default": 8
     },
-	{
+    {
       "type": "header",
       "content": "Info button"
     },
@@ -77,13 +99,13 @@
       "type": "header",
       "content": "Section Space"
     },
-	{
+    {
       "type": "text",
       "id": "buttom_name",
       "label": "Button name",
       "default": "ALL PRODUCTS"
     },
-	{
+    {
       "type": "url",
       "id": "button_name_url",
       "label": "URL button name",
