@@ -179,9 +179,13 @@
           console.log({{ product.name | json }})
         </script>
         <h4 class="des-font capital title-product mb-0">
-          {{ name }}
-          {% comment %} <a href="{{ product.url | within: collection }}">{{ product.name }}</a> {% endcomment %}
+          <a href="{{ product.url | within: collection }}">{{ name }}</a>
         </h4>
+        <!-- Start of Judge.me code -->
+        <div class="jdgm-widget jdgm-preview-badge" data-id="{{ product.id }}">
+          {{ product.metafields.judgeme.badge }}
+        </div>
+        <!-- End of Judge.me code -->
         <!-- PRICE -->
         {% assign on_sale = false %}
         {% if product.compare_at_price > product.price %}
