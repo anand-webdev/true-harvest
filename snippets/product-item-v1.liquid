@@ -2755,6 +2755,12 @@
           <h4 class="des-font capital title-product mb-0">
             <a href="{{ product.url | within: collection }}">{{ product.title }}</a>
           </h4>
+          <!-- Start of Judge.me code --> 
+            <div class='jdgm-widget jdgm-preview-badge' data-id='{{ product.id }}'> 
+              {{ product.metafields.judgeme.badge }} 
+            </div> 
+          <!-- End of Judge.me code -->
+
           <!-- PRICE -->
           {% assign on_sale = false %}
           {% if product.variants[0].compare_at_price > product.variants[0].price %}
