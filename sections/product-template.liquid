@@ -1,64 +1,61 @@
+{% if section.settings.spd_style == 'pd_large_img' %}
+  {% include 'product-details-large-image' %}
 
-{% if section.settings.spd_style == "pd_large_img" %}
-{% include 'product-details-large-image' %}
+{% elsif section.settings.spd_style == 'pd_extended' %}
+  {% include 'product-extended' %}
 
-{% elsif section.settings.spd_style =="pd_extended" %}
-{% include 'product-extended' %}
+{% elsif section.settings.spd_style == 'pd_extended_v2' %}
+  {% include 'product-extended-v2' %}
 
-{% elsif section.settings.spd_style =="pd_sidebar" %}
-{% include 'product-details-sidebar' %}
+{% elsif section.settings.spd_style == 'pd_sidebar' %}
+  {% include 'product-details-sidebar' %}
 
-{% elsif section.settings.spd_style =="pd_sticky" %}
-{% include 'product-details-sticky' %}
+{% elsif section.settings.spd_style == 'pd_sticky' %}
+  {% include 'product-details-sticky' %}
 
-{% elsif section.settings.spd_style =="pd_sticky_2" %}
-{% include 'product-details-sticky' %}
+{% elsif section.settings.spd_style == 'pd_sticky_2' %}
+  {% include 'product-details-sticky' %}
 
-{% elsif section.settings.spd_style =="pd_sticky_center" %}
-{% include 'product-details-sticky-center' %}
+{% elsif section.settings.spd_style == 'pd_sticky_center' %}
+  {% include 'product-details-sticky-center' %}
 
-{% elsif section.settings.spd_style =="pd_extend_background" %}
-{% include 'product-extended' %}
+{% elsif section.settings.spd_style == 'pd_extend_background' %}
+  {% include 'product-extended' %}
 
-{% elsif section.settings.spd_style =="pd_gallery_mordern" %}
-{% include 'product-gallery-basic' %}
+{% elsif section.settings.spd_style == 'pd_gallery_mordern' %}
+  {% include 'product-gallery-basic' %}
 
-{% elsif section.settings.spd_style =="pd_gallery_mordern_2" %}
-{% include 'product-gallery-basic' %}
+{% elsif section.settings.spd_style == 'pd_gallery_mordern_2' %}
+  {% include 'product-gallery-basic' %}
 
-{% elsif section.settings.spd_style =="pd_large_img_center" %}
-{% include 'product-slide-center' %}
+{% elsif section.settings.spd_style == 'pd_large_img_center' %}
+  {% include 'product-slide-center' %}
 
-{% elsif section.settings.spd_style =="pd_slide_gallery" %}
-{% include 'product-slide-gallery' %}
+{% elsif section.settings.spd_style == 'pd_slide_gallery' %}
+  {% include 'product-slide-gallery' %}
 
-{% elsif section.settings.spd_style =="pd_sidebar_v2" %}
-{% include 'product-details-sidebar2' %}
-
-
-
+{% elsif section.settings.spd_style == 'pd_sidebar_v2' %}
+  {% include 'product-details-sidebar2' %}
 {% endif %}
 
-
 {% comment %}
-To take advantage of a callback on the select dropdown, add option_selection.js
-and customize the JS in timber.productPage as needed.
+  To take advantage of a callback on the select dropdown, add option_selection.js
+  and customize the JS in timber.productPage as needed.
 
-Currently, timber.productPage does the following:
-- Hides your <select> tag from above
-- Breaks out the product variants into separate product options, if more than one exists
-- Generates a <select> tag for each product option
-- Enables/disables elements based on variant availability
+  Currently, timber.productPage does the following:
+  - Hides your <select> tag from above
+  - Breaks out the product variants into separate product options, if more than one exists
+  - Generates a <select> tag for each product option
+  - Enables/disables elements based on variant availability
 
-Callback notes:
-- Keep the callback available to the global scope (window.selectCallback) so that advanced
-addons can override it.
-* E.g. multiple currencies http://docs.shopify.com/manual/configuration/store-customization/currencies-and-translations/currencies/how-to-toggle-between-two-currencies
+  Callback notes:
+  - Keep the callback available to the global scope (window.selectCallback) so that advanced
+  addons can override it.
+  * E.g. multiple currencies http://docs.shopify.com/manual/configuration/store-customization/currencies-and-translations/currencies/how-to-toggle-between-two-currencies
 {% endcomment %}
 {{ 'option_selection.js' | shopify_asset_url | script_tag }}
 
 <script>
-
   var selectCallback = function(variant, selector) {
     // BEGIN SWATCHES
     if (variant) {
@@ -120,7 +117,7 @@ addons can override it.
         $(".engoj-nav-item:eq(0)").trigger('click');
 
         $('.zoomLens').css('background-image','url("'+newImageSizedSrc+'")');
-      });        
+      });
     }
 
 
@@ -131,7 +128,7 @@ addons can override it.
       Shopify.Image.switchImage(newImage, element, function (newImageSizedSrc, newImage, element) {
         var $el = $(element);
         $el.attr('src', newImageSizedSrc);
-      });        
+      });
     }
 
     /*end of variant image*/
@@ -155,7 +152,7 @@ addons can override it.
     {% endif %}
   });
 </script>
-  
+
 {% schema %}
 {
   "name": "Product Detail page",
@@ -169,7 +166,7 @@ addons can override it.
       "type": "select",
       "id": "spd_style",
       "label": "Select Main Layout",
-	  "info": "[View Samples](https://cdn.shopify.com/s/files/1/0579/5568/0414/files/Product-Detail-Styles.jpg?v=1627286659)",
+      "info": "[View Samples](https://cdn.shopify.com/s/files/1/0579/5568/0414/files/Product-Detail-Styles.jpg?v=1627286659)",
       "options": [
         {
           "value": "pd_extended",
@@ -215,9 +212,13 @@ addons can override it.
           "value": "pd_sidebar",
           "label": "11.Product Sidebar"
         },
-		{
+        {
           "value": "pd_sidebar_v2",
           "label": "12.Product Sidebar 2"
+        },
+        {
+          "value": "pd_extended_v2",
+          "label": "13.Product Extended V2"
         }
       ],
       "default": "pd_extended"
@@ -226,7 +227,7 @@ addons can override it.
       "type": "select",
       "id": "style_page",
       "label": "Select Thumbnail Style",
-	  "info": "(Show for main layout 1 or 10)",
+      "info": "(Show for main layout 1 or 10)",
       "options": [
         {
           "value": "left",
@@ -247,10 +248,10 @@ addons can override it.
       ],
       "default": "bottom"
     },
-	{
+    {
       "type": "header",
       "content": "Product Background-Extended",
-	  "info": "(Show for main layout 10)"
+      "info": "(Show for main layout 10)"
     },
     {
       "type": "image_picker",
@@ -258,31 +259,31 @@ addons can override it.
       "label": "Background Image",
       "info": "1920 x 1080px recommended"
     },
-	{
-        "type": "color",
-        "id": "bg_prod_color",
-        "label": "Background Color"
-	},
-	{
+    {
+      "type": "color",
+      "id": "bg_prod_color",
+      "label": "Background Color"
+    },
+    {
       "type": "select",
       "id": "display_bg",
       "label": "Select background",
       "options": [
-      {
-      "value": "dis_bg_img",
-      "label": "Backgroung Image"
-      },
-      {
-      "value": "dis_bg_color",
-      "label": "Backgroung Color"
-      }
+        {
+          "value": "dis_bg_img",
+          "label": "Backgroung Image"
+        },
+        {
+          "value": "dis_bg_color",
+          "label": "Backgroung Color"
+        }
       ],
       "default": "dis_bg_img"
     },
     {
       "type": "header",
       "content": "Product Sidebar Style",
-	  "info": "(Show for main layout 11)"
+      "info": "(Show for main layout 11)"
     },
     {
       "type": "select",
@@ -380,7 +381,7 @@ addons can override it.
       "label": "Enable",
       "default": true
     },
-	{
+    {
       "type": "header",
       "content": "Featured Icon"
     },
@@ -390,23 +391,23 @@ addons can override it.
       "label": "Show",
       "default": true
     },
-	{
+    {
       "type": "select",
       "id": "display_feaicon",
       "label": "Select Icon",
-	  "info": "[View Samples](https://cdn.shopify.com/s/files/1/0579/5568/0414/files/ServiceBox.jpg?v=1627286953)",
+      "info": "[View Samples](https://cdn.shopify.com/s/files/1/0579/5568/0414/files/ServiceBox.jpg?v=1627286953)",
       "options": [
-      {
-      "value": "dis_svg",
-      "label": "Icon SVG"
-      },
-      {
-      "value": "dis_font",
-      "label": "Font Icon"
-      }
+        {
+          "value": "dis_svg",
+          "label": "Icon SVG"
+        },
+        {
+          "value": "dis_font",
+          "label": "Font Icon"
+        }
       ],
-      "default": "dis_svg"		
-    }	
+      "default": "dis_svg"
+    }
   ],
   "blocks": [
     {
@@ -417,15 +418,15 @@ addons can override it.
           "type": "textarea",
           "id": "img_featured",
           "label": "Icon SVG",
-		  "info": "[Get icon in here](https://www.flaticon.com/)"
+          "info": "[Get icon in here](https://www.flaticon.com/)"
         },
-		{
+        {
           "type": "text",
           "id": "icon_office",
           "label": "Font Icon",
           "info": "[Get icon in here](https://fontawesome.com/v4.7/icons/)"
         },
-		{
+        {
           "type": "text",
           "id": "block_textheading",
           "label": "Heading"

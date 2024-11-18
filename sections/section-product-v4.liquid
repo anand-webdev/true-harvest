@@ -16,7 +16,7 @@
         {% assign products_limit = section.settings.products_limit %}
         {% assign col = section.settings.select_collection %}
         {% for productWithVarient in collections[col].products limit: products_limit %}
-          {% if section.settings.show_variants_seperately %}
+          {% if section.settings.show_variants_seperately and productWithVarient.variants.size > 1 %}
             {% for product in productWithVarient.variants %}
               {% assign name = productWithVarient.title | append: ' - ' | append: product.title %}
               <div class="col-lg-3 col-6 col-md-4">
