@@ -612,7 +612,7 @@
                     </li>
                     {% endif %}
 
-                    {% if product.metafields.engo_summary.summary_content != blank %}
+                    {% comment %} {% if product.metafields.engo_summary.summary_content != blank %}
                         <div class="pd_summary">
                           <p class=" mb-0">{{product.metafields.engo_summary.summary_content}}</p>
                         </div>
@@ -620,6 +620,9 @@
                         <div class="pd_summary">
                           <p class=" mb-0">{{product.description| strip_html | truncatewords: 50}}</p>
                         </div>
+                        {% endif %} {% endcomment %}
+                        {% if product.metafields.custom.show_icon_benefits %}
+                          <div>{% include 'product-icon-benefits' %}</div>
                         {% endif %}
 
                   </ul>
@@ -630,7 +633,7 @@
           </div>
         </div>
         {% if section.settings.ena_featured_icon %}
-        {% render 'featured-icon' %}
+        {% comment %} {% render 'featured-icon' %} {% endcomment %}
         {% endif %}
       </div>
 

@@ -1,0 +1,102 @@
+{% if product.metafields.custom.show_benefits %}
+  <div class="description-block extended-description">
+    <h2>Benefits</h2>
+    <div class="row">
+      {% for icon in product.metafields.custom.benefits_icons.value %}
+        {% assign titles = product.metafields.custom.benefits_heading.value %}
+        {% assign descriptions = product.metafields.custom.benefits_description.value %}
+        {% assign index = forloop.index | minus: 1 %}
+        {% assign title = titles[index] %}
+        {% assign description = descriptions[index] %}
+        <div class="col-lg-6 col-md-12 content-wrapper">
+          <img src="{{ icon | image_url }}" alt="">
+          <div class="content">
+            <p class="heading">{{ title }}</p>
+            <p class="desc">
+              {{ description }}
+            </p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}
+
+{% if product.metafields.custom.show_uses %}
+  <div class="description-block extended-description">
+    <h2>Uses</h2>
+    {{ product.metafields.custom.uses.value }}
+  </div>
+{% endif %}
+
+{% if product.metafields.custom.shelf_life %}
+  <div class="description-block extended-description">
+    <h2>Self Life</h2>
+    {{ product.metafields.custom.shelf_life }}
+  </div>
+{% endif %}
+
+{% if product.metafields.custom.why_expensive_banner %}
+  {% assign imgs = product.metafields.custom.why_expensive_banner.value | reverse | reverse %}
+  {% assign desktop_img = imgs[0] %}
+  {% assign mobile_img = imgs[1] %}
+  <picture class="banner-image">
+    <source
+      srcset="{{ desktop_img | image_url }}"
+      media="(min-width: 1200px)"
+    >
+    <source
+      srcset="{{ mobile_img | image_url }}"
+      media="(max-width: 760px)"
+    >
+    <img
+      src="{{ desktop_img | image_url }}"
+      alt="Why Its Expensive Banner Image"
+    >
+  </picture>
+{% endif %}
+
+<style>
+  .banner-image img {
+    width: 100%;
+  }
+
+  .description-block {
+    margin-bottom: 2rem;
+  }
+
+  .description-block h2 {
+    font-size: 1.2rem;
+  }
+
+  .extended-description .content-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .extended-description .content-wrapper img {
+    width: 3.5rem;
+  }
+
+  .extended-description .content-wrapper .heading {
+    color: #111;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+
+  .description-block strong {
+    color: #111;
+  }
+
+  .description-block ul li {
+    color: #6a6a6a;
+    list-style-image: url('https://cdn.shopify.com/s/files/1/0569/7349/2296/files/bullet.svg');
+    text-indent: 4px;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+</style>
+{% comment %} <img alt="" src="https://cdn.shopify.com/s/files/1/0569/7349/2296/files/did-you-know-desktop.png?v=1731919264"> {% endcomment %}

@@ -595,6 +595,64 @@ li:hover .link-menu {
   color: #000;
 }
 
+.prod_extended_v2 {
+
+  .swatch .title_variant {
+    width: 100%;
+    border-bottom: none !important;
+  }
+
+  .swatch .variant_other{
+    width:auto;
+    min-width:43px;
+    display: inline-block;
+    min-width: unset !important;
+    height: unset !important;
+    line-height: unset;
+    border: 1px solid #ccc !important;
+    color: #000;
+    margin: 0 10px 10px 0 !important;
+    transition: all .3s ease;
+    font-size: 14px;
+    font-weight: 600;
+    opacity:.5;
+    border-radius: 5px;
+    padding: 0;
+    text-align: left;
+  }
+
+  .swatch .variant_display {
+    padding: 6px 13px;
+    background: {{settings.color_main2}};
+    font-size: 12px;
+    color: white;
+  }
+
+  .swatch .variant_money_wrapper {
+    padding: 6px 13px;
+    font-weight: normal;
+  }
+
+  .swatch .variant_money_wrapper .variant_price {
+    font-weight: 600;
+  }
+
+  .swatch .variant_money_wrapper .variant_compare_at_price {
+    text-decoration: line-through;
+  }
+
+  .swatch .variant_other:hover,
+  .swatch .variant_other:focus,
+  .swatch input:checked+.variant_other{
+    border: 1px solid {{settings.color_main2}} !important;
+    opacity:1;
+  }
+  .swatch input:checked + label{
+    background: unset;
+    color: #000;
+  }
+}
+
 
 
 

@@ -1,0 +1,42 @@
+<div class="product-pros mt-4 ">
+  {% for title in product.metafields.custom.icon_benefits_titles.value %}
+    {% assign icons = product.metafields.custom.icon_benefits_icons.value | reverse | reverse %}
+    {% assign index = forloop.index | minus: 1 %}
+    {% assign icon = icons[index] %}
+    <div class=" pro-card">
+      <img src="{{ icon | image_url }}">
+      <div class="content">{{ title }}</div>
+    </div>
+  {% endfor %}
+</div>
+
+<style>
+  .product-pros {
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .product-pros .pro-card {
+    border: 1px solid #b7b2ac;
+    border-radius: 1rem;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .product-pros .pro-card .content {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .product-pros .pro-card img {
+    width: 60px;
+    margin-bottom: 1rem;
+  }
+
+  @media (max-width: 767px) {
+    .product-pros {
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+    }
+  }
+</style>
