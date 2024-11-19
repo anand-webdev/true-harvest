@@ -53,7 +53,7 @@
     "title_1": "There are",
     "title_2": "items<br>in your cart",
     "title_also_prod": "With this products also buy:",
-    "relate_product_collection": "new-arrivals",
+    "relate_product_collection": "wood-pressed-oils",
     "products__relate_limit": 16,
     "color_main": "#111111",
     "color_main2": "#2a431c",
@@ -4174,7 +4174,10 @@
             }
           }
         },
-        "block_order": ["1569385470140", "1569397571645"],
+        "block_order": [
+          "1569385470140",
+          "1569397571645"
+        ],
         "settings": {}
       },
       "page-lookbook-v2": {
@@ -4304,7 +4307,11 @@
             }
           }
         },
-        "block_order": ["1570523646620", "1569550509012", "1569550503977"],
+        "block_order": [
+          "1570523646620",
+          "1569550509012",
+          "1569550503977"
+        ],
         "settings": {
           "bg_image": "",
           "title_main": "Spring Lookbook<br>Collection",
@@ -5343,7 +5350,10 @@
             }
           }
         },
-        "block_order": ["1623051861007c98cc-0", "1623051861007c98cc-1"],
+        "block_order": [
+          "1623051861007c98cc-0",
+          "1623051861007c98cc-1"
+        ],
         "settings": {
           "margin_top": "",
           "margin_bottom": ""
@@ -5913,7 +5923,9 @@
             }
           }
         },
-        "block_order": ["af21354b-a61b-4857-8e99-46dc724c52e5"],
+        "block_order": [
+          "af21354b-a61b-4857-8e99-46dc724c52e5"
+        ],
         "settings": {
           "enable_intro": true
         }
