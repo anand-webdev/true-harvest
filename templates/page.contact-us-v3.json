@@ -53,6 +53,7 @@
         "330eb34c-decc-4f07-9926-a2f83fdbe6ad"
       ],
       "settings": {
+        "bg_breadcrumb": "shopify://shop_images/Untitled_design.png",
         "enable_map": true,
         "select_style_map": "style_image",
         "image_map": "shopify://shop_images/web-logo.png",
