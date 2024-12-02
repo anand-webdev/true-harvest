@@ -626,7 +626,7 @@
     "gmap_key": "AIzaSyCBc21YOkU4nUELVakHlB_dsL07qEZUHZQ",
     "gmap_latitude": "33.3209127",
     "gmap_longitude": "-111.8005377",
-    "show_menu_toolbar": true,
+    "show_menu_toolbar": false,
     "checkout_header_image": "",
     "checkout_logo_image": "",
     "checkout_logo_position": "left",
@@ -4174,10 +4174,7 @@
             }
           }
         },
-        "block_order": [
-          "1569385470140",
-          "1569397571645"
-        ],
+        "block_order": ["1569385470140", "1569397571645"],
         "settings": {}
       },
       "page-lookbook-v2": {
@@ -4307,11 +4304,7 @@
             }
           }
         },
-        "block_order": [
-          "1570523646620",
-          "1569550509012",
-          "1569550503977"
-        ],
+        "block_order": ["1570523646620", "1569550509012", "1569550503977"],
         "settings": {
           "bg_image": "",
           "title_main": "Spring Lookbook<br>Collection",
@@ -5350,10 +5343,7 @@
             }
           }
         },
-        "block_order": [
-          "1623051861007c98cc-0",
-          "1623051861007c98cc-1"
-        ],
+        "block_order": ["1623051861007c98cc-0", "1623051861007c98cc-1"],
         "settings": {
           "margin_top": "",
           "margin_bottom": ""
@@ -5923,9 +5913,7 @@
             }
           }
         },
-        "block_order": [
-          "af21354b-a61b-4857-8e99-46dc724c52e5"
-        ],
+        "block_order": ["af21354b-a61b-4857-8e99-46dc724c52e5"],
         "settings": {
           "enable_intro": true
         }
