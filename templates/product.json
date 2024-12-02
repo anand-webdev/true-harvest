@@ -11,6 +11,9 @@
   "sections": {
     "main": {
       "type": "product-template",
+      "custom_css": [
+        ".shopify-payment-button__button {width: 100% !important}"
+      ],
       "settings": {
         "spd_style": "pd_extended_v2",
         "style_page": "bottom",
