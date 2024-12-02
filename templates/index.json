@@ -16,7 +16,7 @@
           "type": "slideshow",
           "settings": {
             "select_position_content": "left",
-            "img_slide": "shopify://shop_images/elegant-skin-care-banner-design.jpg",
+            "img_slide": "shopify://shop_images/c1.png",
             "sub_title": "Discount 30%",
             "color_sub_title": "#000000",
             "title_slide": "Natural organic",
@@ -35,7 +35,7 @@
           "type": "slideshow",
           "settings": {
             "select_position_content": "left",
-            "img_slide": "shopify://shop_images/elegant-skin-care-banner-design.jpg",
+            "img_slide": "shopify://shop_images/c2.png",
             "sub_title": "Discount 30%",
             "color_sub_title": "#000000",
             "title_slide": "Fresh Vegetables",
