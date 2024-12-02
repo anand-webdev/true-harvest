@@ -55,10 +55,7 @@
         "template--18554035503383__8a5123f6-3004-47cd-b23e-62771296c664-168137585742fdeda1-0",
         "template--18554035503383__8a5123f6-3004-47cd-b23e-62771296c664-168137585742fdeda1-1"
       ],
-      "custom_css": [
-        "@media (max-width: 1200px) {.section-slideshow-v2 .item-slide .img-slide .img_desktop {height: fit-content; object-fit: contain; }}",
-        ".section-slideshow-v2 .slide-content {display: none;}"
-      ],
+      "custom_css": [],
       "settings": {
         "margin_top": "",
         "margin_bottom": ""
