@@ -12,7 +12,7 @@
     "main": {
       "type": "product-template",
       "custom_css": [
-        ".shopify-payment-button__button {width: 100% !important}"
+        ".shopify-payment-button__button {width: 100% !important;}"
       ],
       "settings": {
         "spd_style": "pd_extended_v2",
@@ -26,7 +26,7 @@
         "show_quantity": true,
         "show_sku": true,
         "show_cate": true,
-        "ena_sticky_addcart": false,
+        "ena_sticky_addcart": true,
         "style_stickyaddcart": "bottom",
         "ena_zoom": false,
         "ena_featured_icon": true,
