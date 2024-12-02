@@ -424,10 +424,10 @@
 
                   <div class="product-price ">                      
                     {% capture price %}{{ product.price | money }}{% endcapture %}
-                    <ins class="enj-product-price engoj_price_main">{{ price }}</ins>
-                {% if on_sale %}<del class="enj-product-price-compare">{{ product.compare_at_price | money }}</del> {% endif %}
-
+                      <ins class="enj-product-price engoj_price_main">{{ price }}</ins>
+                    {% if on_sale %}<del class="enj-product-price-compare">{{ product.compare_at_price | money }}</del> {% endif %}
                   </div>
+                  <div class="mb-3 ">MRP (Incl. of all taxes)</div>
                   {% if section.settings.show_rating %}
                   <div class="wrap-rating">
                     <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
