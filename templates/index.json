@@ -16,7 +16,8 @@
           "type": "slideshow",
           "settings": {
             "select_position_content": "left",
-            "img_slide": "shopify://shop_images/c1.png",
+            "img_slide": "shopify://shop_images/c1-new-desktop.png",
+            "img_slide_mb": "shopify://shop_images/c1-new-mobile.png",
             "sub_title": "Discount 30%",
             "color_sub_title": "#000000",
             "title_slide": "Natural organic",
@@ -35,7 +36,8 @@
           "type": "slideshow",
           "settings": {
             "select_position_content": "left",
-            "img_slide": "shopify://shop_images/c2.png",
+            "img_slide": "shopify://shop_images/c2-new-desktop.png",
+            "img_slide_mb": "shopify://shop_images/c2-new-mobile.png",
             "sub_title": "Discount 30%",
             "color_sub_title": "#000000",
             "title_slide": "Fresh Vegetables",
@@ -237,8 +239,9 @@
         "bg_color": "#2a431c"
       }
     },
-    "instant_f_wp_dty4u9hlo_i_fpm_aAnfqV": {
+    "instant_f_wp_dty4u9hlo_i_fpm_Y6ffRi": {
       "type": "instant-fWPDty4u9hloIFpm",
+      "custom_css": [],
       "settings": {
         "text_OZAlolf52U3fgYM4": "<h3>Available over WhatsApp</h3><h3> or call</h3>",
         "text_nKOfEYZxe75wEjUt": "<h3>Continuous support</h3><h3>throughout your journey</h3>",
@@ -257,6 +260,6 @@
     "reviews_bGJqFz",
     "64e47216-8c4c-4581-9d18-6f61f2b49b52",
     "section_bulk_contact_VfiVE4",
-    "instant_f_wp_dty4u9hlo_i_fpm_aAnfqV"
+    "instant_f_wp_dty4u9hlo_i_fpm_Y6ffRi"
   ]
 }
