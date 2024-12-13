@@ -226,6 +226,17 @@
         "ena_btn_readmore": true
       }
     },
+    "section_bulk_contact_VfiVE4": {
+      "type": "section-bulk-contact",
+      "settings": {
+        "margin_top": "",
+        "margin_bottom": "",
+        "header_text": "Looking to buy in bulk?",
+        "description": "Our wholesale team is available and will assist you during the process",
+        "btn_text": "Get in touch",
+        "bg_color": "#2a431c"
+      }
+    },
     "instant_f_wp_dty4u9hlo_i_fpm_imb6jn": {
       "type": "instant-fWPDty4u9hloIFpm",
       "settings": {
@@ -245,6 +256,7 @@
     "6c32d6a4-a3ea-47fe-ba84-f894d105a6e0",
     "reviews_bGJqFz",
     "64e47216-8c4c-4581-9d18-6f61f2b49b52",
+    "section_bulk_contact_VfiVE4",
     "instant_f_wp_dty4u9hlo_i_fpm_imb6jn"
   ]
 }
