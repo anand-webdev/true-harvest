@@ -225,6 +225,17 @@
         "enable_excerpt": true,
         "ena_btn_readmore": true
       }
+    },
+    "instant_f_wp_dty4u9hlo_i_fpm_imb6jn": {
+      "type": "instant-fWPDty4u9hloIFpm",
+      "settings": {
+        "text_OZAlolf52U3fgYM4": "<h3>Available over WhatsApp</h3><h3> or call</h3>",
+        "text_nKOfEYZxe75wEjUt": "<h3>Continuous support</h3><h3>throughout your journey</h3>",
+        "text_vNQl1g8n87Y9ErQp": "<h3>Easily schedule </h3><h3>reorders</h3>",
+        "text_H55Ssdn9fw8OsGRb": "<h3>Completely confidential</h3><h3>communication</h3>",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
@@ -233,6 +244,7 @@
     "we_believe_in_Vdj6wU",
     "6c32d6a4-a3ea-47fe-ba84-f894d105a6e0",
     "reviews_bGJqFz",
-    "64e47216-8c4c-4581-9d18-6f61f2b49b52"
+    "64e47216-8c4c-4581-9d18-6f61f2b49b52",
+    "instant_f_wp_dty4u9hlo_i_fpm_imb6jn"
   ]
 }
