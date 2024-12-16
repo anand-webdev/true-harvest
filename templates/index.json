@@ -214,6 +214,7 @@
     },
     "64e47216-8c4c-4581-9d18-6f61f2b49b52": {
       "type": "section-blog-v1",
+      "disabled": true,
       "settings": {
         "margin_top": "",
         "margin_bottom": "",
@@ -239,17 +240,9 @@
         "bg_color": "#2a431c"
       }
     },
-    "instant_f_wp_dty4u9hlo_i_fpm_Y6ffRi": {
-      "type": "instant-fWPDty4u9hloIFpm",
-      "custom_css": [],
-      "settings": {
-        "text_OZAlolf52U3fgYM4": "<h3>Available over WhatsApp</h3><h3> or call</h3>",
-        "text_nKOfEYZxe75wEjUt": "<h3>Continuous support</h3><h3>throughout your journey</h3>",
-        "text_vNQl1g8n87Y9ErQp": "<h3>Easily schedule </h3><h3>reorders</h3>",
-        "text_H55Ssdn9fw8OsGRb": "<h3>Completely confidential</h3><h3>communication</h3>",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
+    "section_bulk_support_GmHWJg": {
+      "type": "section-bulk-support",
+      "settings": {}
     }
   },
   "order": [
@@ -260,6 +253,6 @@
     "reviews_bGJqFz",
     "64e47216-8c4c-4581-9d18-6f61f2b49b52",
     "section_bulk_contact_VfiVE4",
-    "instant_f_wp_dty4u9hlo_i_fpm_Y6ffRi"
+    "section_bulk_support_GmHWJg"
   ]
 }
