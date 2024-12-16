@@ -326,7 +326,7 @@
     "url_sc_fv2_3": "",
     "icon_sc_fv2_4": "",
     "url_sc_fv2_4": "",
-    "enable_fv2_bottom": false,
+    "enable_fv2_bottom": true,
     "fv2_bottom_copyright": "© Copyright 2024 | <a href=\"\" rel=\"nofollow\" target=\"_blank\" class=\"underline_hover bold\">  True Harvest </a>",
     "fv2_bottom_payment_img": "shopify://shop_images/logoo-removebg-preview.png",
     "title_newletter": "Our Newsletter",
