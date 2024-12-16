@@ -36364,3 +36364,51 @@ a.back-to-top:hover::before{
   padding: 0.5rem 1.5rem;
   border-radius: 2rem;
 }
+
+
+
+.bulk-support-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  
+}
+
+.bulk-support {
+  max-width: 1200px; 
+}
+
+.bulk-support {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.support-features {
+  text-align: center;
+}
+
+.bulk-support-wrapper .bulk-support-card .bulk-support-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.bulk-support-wrapper .bulk-support-icon {
+  width: 3rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 767px) {
+  .bulk-support-wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1.5rem;
+  }
+  .bulk-support-wrapper .bulk-support-card .bulk-support-title {
+    font-size: 1rem;
+  }
+  .bulk-support-wrapper .bulk-support-card .bulk-support-content {
+    font-size: 0.8rem;
+  }
+}
