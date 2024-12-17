@@ -201,9 +201,10 @@
                 </a>
               {% else %}
                 {% assign linkTitle = link.title | downcase | replace: ' ', '-' %}
-                {%  assign iconLink = 'menu-' | append: linkTitle | append: ".svg"  %}
+                {% assign iconLink = 'menu-' | append: linkTitle | append: '.svg' %}
                 <a href="{{ link.url }}" title="{{link.title | split: '[' | first }}" class="nammenu w-100 menu_lv1 "
-                  ><img style="width:1.5rem; margin-right: 10px" src="{{ iconLink | asset_url }}" /><span>{{ link.title | split: '[' | first }}</span></a
+                  ><img style="width:1.5rem; margin-right: 10px" src="{{ iconLink | asset_url }}"
+                  ><span>{{ link.title | split: '[' | first }}</span></a
                 >
               {% endif %}
             </div>
@@ -212,17 +213,16 @@
       </div>
     </div>
   </div>
-  <div class="mobile-menu-footer">
-    {% if customer %}
-      <a href="{{shop.url}}/account" class="mobile-menu-login">
-        <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-        <span>Account</span>
-      </a>
-    {% else %}
-      <a href="{{shop.url}}/account/login" class="mobile-menu-login">
-        <i class="fa fa-sign-in" aria-hidden="true"></i>
-        <span>Login</span>
-      </a>
-    {% endif %}
-  </div>
+  {% if customer %}
+    <a href="{{shop.url}}/account" class="mobile-menu-login">
+      <i class="fa fa-user-o mr-1" aria-hidden="true"></i>
+      <img src="{{ login.png | asset_url }} >
+      <span>Account</span>
+    </a>
+  {% else %}
+    <a href="{{shop.url}}/account/login" class="mobile-menu-login">
+      <i class="fa fa-sign-in mr-1" aria-hidden="true"></i>
+      <span>Login</span>
+    </a>
+  {% endif %}
 </div>
