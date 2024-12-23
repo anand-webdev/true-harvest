@@ -1,11 +1,25 @@
 {% if section.settings.select_fts == 'footer_v2' %}
   {% if template contains 'index' %}
-    <img
-      class="w-100"
-      style="margin-bottom: -3px;"
-      src="{{ "footer-top.svg" | asset_url }}"
-      alt=""
-    >
+    <picture class="lazyload img-fluid w-100" style="margin-bottom: -3px;">
+      <!-- Mobile Image -->
+      <source srcset="{{"footer-img-mobile.png" |asset_url}}" media="(max-width: 768px)">
+      <!-- Desktop Image -->
+      <source srcset="{{"footer-top.svg" | asset_url}}" media="(min-width: 769px)">
+      <!-- Fallback Image -->
+      <img
+        src="{{"footer-top.svg" | asset_url}}"
+        alt="Responsive Image"
+        style="margin-bottom: -3px;width: 100vw;"
+      >
+    </picture>
+    {% comment %}
+      <img
+        class="w-100"
+        style="margin-bottom: -3px;"
+        src="{{ "footer-top.svg" | asset_url }}"
+        alt=""
+      >
+    {% endcomment %}
     <footer class=" footer_v2">
       <div class="top-footer z-2">
         <div class="container container-v1">
@@ -232,12 +246,18 @@
 {% if section.settings.select_fts_all == 'footer_ver2' %}
   {% unless template contains 'index' %}
     <footer class=" footer_v2">
-      <img
-        class="w-100"
-        style="margin-bottom: -3px;"
-        src="{{ "footer-top.svg" | asset_url }}"
-        alt=""
-      >
+      <picture class="lazyload img-fluid w-100" style="margin-bottom: -3px;">
+        <!-- Mobile Image -->
+        <source srcset="{{"footer-img-mobile.png" |asset_url}}" media="(max-width: 768px)">
+        <!-- Desktop Image -->
+        <source srcset="{{"footer-top.svg" | asset_url}}" media="(min-width: 769px)">
+        <!-- Fallback Image -->
+        <img
+          src="{{"footer-top.svg" | asset_url}}"
+          alt="Responsive Image"
+          style="margin-bottom: -3px;width: 100vw;"
+        >
+      </picture>
       <div class="top-footer">
         <div class="container container-v2">
           <div class="row">
