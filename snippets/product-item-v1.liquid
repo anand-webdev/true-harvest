@@ -2755,10 +2755,10 @@
           <h4 class="des-font capital title-product mb-0">
             <a href="{{ product.url | within: collection }}">{{ product.title }}</a>
           </h4>
-          <!-- Start of Judge.me code --> 
-            <div class='jdgm-widget jdgm-preview-badge' data-id='{{ product.id }}'> 
-              {{ product.metafields.judgeme.badge }} 
-            </div> 
+          <!-- Start of Judge.me code -->
+          <div class="jdgm-widget jdgm-preview-badge" data-id="{{ product.id }}">
+            {{ product.metafields.judgeme.badge }}
+          </div>
           <!-- End of Judge.me code -->
 
           <!-- PRICE -->
@@ -2776,19 +2776,21 @@
             {%- endif %}
           </p>
           <form
-            method="post"
             action="/cart/add"
+            method="post"
             enctype="multipart/form-data"
-            class="inline-block icon-addcart  box-shadow"
-            data-toggle="tooltip"
-            data-placement="top"
-            data-original-title="{{settings.pia_addcart_name}}"
+            id="AddToCartForm"
           >
             <input type="hidden" name="id" value="{{ product.variants.first.id }}">
             {% if sold_out %}
               <button type="submit" name="add" class="rounded-btn-primary mt-2" disabled>Sold Out</button>
             {% else %}
-              <button type="submit" name="add" class="rounded-btn-primary mt-2">Add to cart</button>
+              <button
+                type="submit"
+                class="rounded-btn-primary mt-2 shop-button enj-add-to-cart-btn engoj-btn-addtocart"
+              >
+                {{ settings.pia_addcart_name }}
+              </button>
             {% endif %}
           </form>
         </div>
