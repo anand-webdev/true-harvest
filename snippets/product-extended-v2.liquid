@@ -564,7 +564,31 @@
                     </div>
                     <!-- End add to cart & quantity -->
                     {% form 'product', product %}
-                    {{ form | payment_button }}
+{%- unless product.selected_or_first_available_variant.available -%}
+                    <style>
+                      .sr-headless-checkout{
+                        opacity:0.5;
+                        cursor: not-allowed;
+                        pointer-events: none;
+                      }
+                    </style>
+                  {%- endunless -%}
+<div class="shiprocket-headless" data-type="product"></div>
+<input type="hidden" value="true" id="fastrrCollectionPage" />
+<input type="hidden" value={{ product.url }} name="productUrl" />
+<!-- <script>
+    if(Intl.DateTimeFormat().resolvedOptions().timeZone === "Asia/Calcutta") {
+      document.write('<div class="shiprocket-headless" data-type="product"></div>')
+    }
+                      else{
+                       if(Intl.DateTimeFormat().resolvedOptions().timeZone === "Asia/Kolkata") {
+      document.write('<div class="shiprocket-headless" data-type="product"></div>')
+    }
+                      else{ document.write('{{ form | payment_button }}')
+                        }
+                        }
+</script> -->
+                    <!-- {{ form | payment_button }} -->
                     {% endform %}
 
                     {% endif %}

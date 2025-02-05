@@ -36304,7 +36304,8 @@ a.back-to-top:hover::before{
 .rounded-btn-primary {
   background: {{settings.color_main2}};
   color: white;
-  padding:  0.5rem 2rem;
+  width: 100%;
+  padding:  0.5rem 0;
   display: block;
   text-align: center;
   border-radius: 2rem;
@@ -36317,6 +36318,25 @@ a.back-to-top:hover::before{
 
 .rounded-btn-primary:disabled {
   background-color: #788a6e;
+  cursor:  not-allowed;
+}
+
+/* Rounded Button Outline */
+.rounded-btn-primary-outline {
+  border: 2px solid {{settings.color_main2}};
+  color: {{settings.color_main2}};
+  width: 100%;
+  padding:  0.3rem 0;
+  display: block;
+  text-align: center;
+  border-radius: 2rem;
+}
+
+
+.rounded-btn-primary-outline:disabled {
+  background-color: #cecece;
+  color: #a4a4a4;
+  border-color: #a4a4a4;
   cursor:  not-allowed;
 }
 
