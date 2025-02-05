@@ -210,12 +210,20 @@
           {% if sold_out %}
             <button type="submit" name="add" class="rounded-btn-primary mt-2" disabled>Sold Out</button>
           {% else %}
-            <button
-              type="submit"
-              class="rounded-btn-primary mt-2 shop-button enj-add-to-cart-btn engoj-btn-addtocart"
-            >
-              {{ settings.pia_addcart_name }}
-            </button>
+            <div class="d-flex flex-column">
+              <button
+                type="submit"
+                class="rounded-btn-primary mt-2 shop-button enj-add-to-cart-btn engoj-btn-addtocart mr-2"
+              >
+                {{ settings.pia_addcart_name }}
+              </button>
+              <button
+                type="button"
+                class="rounded-btn-primary-outline mt-2 shop-button enj-add-to-cart-btn engoj-btn-addtocart"
+              >
+                Buy Now
+              </button>
+            </div>
           {% endif %}
         </form>
       </div>
