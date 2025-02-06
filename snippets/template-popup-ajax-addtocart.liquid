@@ -4,7 +4,7 @@
     <div class="error-message"></div>
   </div>
 </div>
-<div class="product-popup engo-popup engoc_hide_mobile">
+<div class="product-popup engo-popup">
   <div class="overlay-addcart"></div>
   <div class="content">
     <a href="javascript:void(0)" class="close-window set-16-svg fill-white">
@@ -23,7 +23,7 @@
       </svg>
     </a>
     <div class="mini-product-item row">
-      <div class="col-md-6 col-sm-6 text-center product-image">
+      <div class="col-12 col-md-6 text-center product-image">
         <p class="success-message">{{ 'popup.cart' | t }}</p>
         <img alt="img" src="{{'favicon.png' | asset_url}}">
         <div class="product-info">
@@ -44,12 +44,12 @@
           {% else %}
             <p class="text-uppercase">{{ 'cart.label.price' | t }} : <span class="product-price"></span></p>
             <p>{{ 'minicart.general.qty' | t }} : <span class="product-qty"></span></p>
-            <p>{{ 'cart.label.cart_total' | t }} : <span class="product-total"></span></p>
+            <p class="cart-total">{{ 'cart.label.cart_total' | t }} : <span class="product-total"></span></p>
           {% endif %}
         </div>
       </div>
-      <div class="col-md-6 col-sm-6 text-center more_info">
-        <p>
+      <div class="col-12 col-md-6 text-center more_info">
+        <p class="remaining-items">
           {{ settings.title_1 }}
           <span class="product-item-count"></span> {{ settings.title_2 }}
         </p>
