@@ -392,7 +392,7 @@
     "icon_sc_fv6_4": "fa fa-instagram",
     "url_sc_fv6_4": "",
     "copyright_fv6": "Foden Online Store",
-    "po_style": "po_swatchs",
+    "po_style": "po_dropdown",
     "swatch_style": "default",
     "product_style": "style_10",
     "show_new_label": true,
