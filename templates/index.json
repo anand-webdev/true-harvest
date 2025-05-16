@@ -152,6 +152,17 @@
         "lazy": true
       }
     },
+    "section_bulk_contact_VfiVE4": {
+      "type": "section-bulk-contact",
+      "settings": {
+        "margin_top": "",
+        "margin_bottom": "",
+        "header_text": "Lets Get Started",
+        "description": "",
+        "btn_text": "GET YOUR 30 DAY PLAN",
+        "bg_color": "#2a431c"
+      }
+    },
     "section_product_v3_8tTqGa": {
       "type": "section-product-v3",
       "settings": {
@@ -314,7 +325,7 @@
         "ena_btn_readmore": true
       }
     },
-    "section_bulk_contact_VfiVE4": {
+    "section_bulk_contact_RmEehi": {
       "type": "section-bulk-contact",
       "settings": {
         "margin_top": "",
@@ -333,12 +344,13 @@
   "order": [
     "8a5123f6-3004-47cd-b23e-62771296c664",
     "ss_feature_1_ecUJtB",
+    "section_bulk_contact_VfiVE4",
     "section_product_v3_8tTqGa",
     "we_believe_in_Vdj6wU",
     "6c32d6a4-a3ea-47fe-ba84-f894d105a6e0",
     "reviews_bGJqFz",
     "64e47216-8c4c-4581-9d18-6f61f2b49b52",
-    "section_bulk_contact_VfiVE4",
+    "section_bulk_contact_RmEehi",
     "section_bulk_support_GmHWJg"
   ]
 }
