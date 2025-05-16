@@ -4,15 +4,17 @@
   class="bulk-contact "
 >
   <div class="container container-v2 bulk-contact-wrapper">
-    <div class="bulk-contact-content">
-      <h2>{{ section.settings.header_text }}</h2>
-      <p>{{ section.settings.description }}</p>
+    <div class="bulk-contact-content" style="text-align: {{ section.settings.header_align }};">
+      <h2 style="text-align: {{ section.settings.header_align }};">{{ section.settings.header_text }}</h2>
+      <p style="text-align: {{ section.settings.description_align }};">{{ section.settings.description }}</p>
     </div>
-    <a href="{{ section.settings.button_link }}">
-      <button class="rounded-button-light">
-        {{ section.settings.btn_text }}
-      </button>
-    </a>
+    <div style="text-align: {{ section.settings.button_align }};">
+      <a href="{{ section.settings.button_link }}">
+        <button class="rounded-button-light" style="border-radius: {{ section.settings.button_radius }}px;">
+          {{ section.settings.btn_text }}
+        </button>
+      </a>
+    </div>
   </div>
 </div>
 
@@ -25,9 +27,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
   }
   .bulk-contact-content {
     color: white;
+    flex: 1;
   }
   .bulk-contact-content h2 {
     font-size: 1.3rem;
@@ -35,7 +39,7 @@
   }
   .bulk-contact-content p {
     margin-bottom: 0;
-    font-weight: light;
+    font-weight: 300;
   }
 
   @media (max-width: 767px) {
@@ -70,9 +74,31 @@
       "label": "Header Text"
     },
     {
+      "type": "select",
+      "id": "header_align",
+      "label": "Header Alignment",
+      "default": "left",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ]
+    },
+    {
       "type": "text",
       "id": "description",
       "label": "Description Text"
+    },
+    {
+      "type": "select",
+      "id": "description_align",
+      "label": "Description Alignment",
+      "default": "left",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ]
     },
     {
       "type": "text",
@@ -84,6 +110,26 @@
       "type": "url",
       "id": "button_link",
       "label": "Button Link"
+    },
+    {
+      "type": "range",
+      "id": "button_radius",
+      "label": "Button Border Radius (px)",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "default": 25
+    },
+    {
+      "type": "select",
+      "id": "button_align",
+      "label": "Button Alignment",
+      "default": "left",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ]
     },
     {
       "type": "color",
@@ -98,7 +144,11 @@
       "settings": {
         "header_text": "Looking to buy in bulk?",
         "description": "Our wholesale team is available and will assist you during the process",
-        "btn_text": "Get in touch"
+        "btn_text": "Get in touch",
+        "button_radius": 25,
+        "button_align": "left",
+        "header_align": "left",
+        "description_align": "left"
       }
     }
   ]
