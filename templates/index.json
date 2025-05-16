@@ -158,9 +158,13 @@
         "margin_top": "",
         "margin_bottom": "",
         "header_text": "Lets Get Started",
+        "header_align": "center",
         "description": "",
+        "description_align": "left",
         "btn_text": "GET YOUR 30 DAY PLAN",
         "button_link": "https://quiz.trueharvest.store",
+        "button_radius": 25,
+        "button_align": "left",
         "bg_color": "#2a431c"
       }
     },
@@ -332,9 +336,13 @@
         "margin_top": "",
         "margin_bottom": "",
         "header_text": "Looking to buy in bulk?",
+        "header_align": "left",
         "description": "Our wholesale team is available and will assist you during the process",
+        "description_align": "left",
         "btn_text": "Get in touch",
         "button_link": "",
+        "button_radius": 25,
+        "button_align": "left",
         "bg_color": "#2a431c"
       }
     },
