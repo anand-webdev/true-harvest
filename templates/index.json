@@ -12,6 +12,26 @@
     "8a5123f6-3004-47cd-b23e-62771296c664": {
       "type": "section-slideshow-v2",
       "blocks": {
+        "template--18554035503383__8a5123f6-3004-47cd-b23e-62771296c664-168137585742fdeda1-1": {
+          "type": "slideshow",
+          "settings": {
+            "select_position_content": "left",
+            "img_slide": "shopify://shop_images/c2-new-desktop.png",
+            "img_slide_mb": "shopify://shop_images/carousel.png",
+            "sub_title": "Discount 30%",
+            "color_sub_title": "#000000",
+            "title_slide": "Fresh Vegetables",
+            "color_title": "#000000",
+            "desc_slide": "Order online and have your products delivered<br>to your closest store for free",
+            "color_desc_slide": "#000000",
+            "btn_slide": "SHOP NOW",
+            "bg_color_block_button": "#000000",
+            "color_block_button": "#ffffff",
+            "bg_color_hover_button": "#6fa62f",
+            "color_hover_text": "#ffffff",
+            "url_btn": "https://quiz.trueharvest.store"
+          }
+        },
         "template--18554035503383__8a5123f6-3004-47cd-b23e-62771296c664-168137585742fdeda1-0": {
           "type": "slideshow",
           "settings": {
@@ -31,31 +51,11 @@
             "color_hover_text": "#ffffff",
             "url_btn": "shopify://collections/all"
           }
-        },
-        "template--18554035503383__8a5123f6-3004-47cd-b23e-62771296c664-168137585742fdeda1-1": {
-          "type": "slideshow",
-          "settings": {
-            "select_position_content": "left",
-            "img_slide": "shopify://shop_images/c2-new-desktop.png",
-            "img_slide_mb": "shopify://shop_images/c2-new-mobile.png",
-            "sub_title": "Discount 30%",
-            "color_sub_title": "#000000",
-            "title_slide": "Fresh Vegetables",
-            "color_title": "#000000",
-            "desc_slide": "Order online and have your products delivered<br>to your closest store for free",
-            "color_desc_slide": "#000000",
-            "btn_slide": "SHOP NOW",
-            "bg_color_block_button": "#000000",
-            "color_block_button": "#ffffff",
-            "bg_color_hover_button": "#6fa62f",
-            "color_hover_text": "#ffffff",
-            "url_btn": "shopify://collections/all"
-          }
         }
       },
       "block_order": [
-        "template--18554035503383__8a5123f6-3004-47cd-b23e-62771296c664-168137585742fdeda1-0",
-        "template--18554035503383__8a5123f6-3004-47cd-b23e-62771296c664-168137585742fdeda1-1"
+        "template--18554035503383__8a5123f6-3004-47cd-b23e-62771296c664-168137585742fdeda1-1",
+        "template--18554035503383__8a5123f6-3004-47cd-b23e-62771296c664-168137585742fdeda1-0"
       ],
       "custom_css": [
         "@media (max-width: 576px) {.section-slideshow-v2 .item-slide .img-slide .img_desktop {height: 200px !important; object-fit: contain; }}",
