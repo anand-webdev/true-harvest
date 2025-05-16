@@ -1,6 +1,6 @@
 <div
   data-section-id="{{ section.id }}"
-  style="background-color: {{section.settings.bg_color}}; margin-top: {{section.settings.margin_top}}; margin-bottom: {{section.settings.margin_bottom}}"
+  style="background-color: {{ section.settings.bg_color }}; margin-top: {{ section.settings.margin_top }}px; margin-bottom: {{ section.settings.margin_bottom }}px"
   class="bulk-contact "
 >
   <div class="container container-v2 bulk-contact-wrapper">
@@ -8,7 +8,7 @@
       <h2>{{ section.settings.header_text }}</h2>
       <p>{{ section.settings.description }}</p>
     </div>
-    <a href="/pages/contact">
+    <a href="{{ section.settings.button_link }}">
       <button class="rounded-button-light">
         {{ section.settings.btn_text }}
       </button>
@@ -81,6 +81,11 @@
       "default": "Get in touch"
     },
     {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
       "type": "color",
       "id": "bg_color",
       "label": "Bg Color",
@@ -92,7 +97,8 @@
       "name": "Bulk Contact",
       "settings": {
         "header_text": "Looking to buy in bulk?",
-        "description": "Our wholesale team is available and will assist you during the process"
+        "description": "Our wholesale team is available and will assist you during the process",
+        "btn_text": "Get in touch"
       }
     }
   ]
