@@ -163,8 +163,9 @@
         "description_align": "left",
         "btn_text": "GET YOUR 30 DAY PLAN",
         "button_link": "https://quiz.trueharvest.store",
-        "button_radius": 6,
+        "button_radius": 0,
         "button_align": "center",
+        "content_align": "center",
         "bg_color": "#2a431c"
       }
     },
@@ -343,6 +344,7 @@
         "button_link": "",
         "button_radius": 25,
         "button_align": "left",
+        "content_align": "flex-start",
         "bg_color": "#2a431c"
       }
     },
