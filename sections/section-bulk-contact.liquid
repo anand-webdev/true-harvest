@@ -1,14 +1,17 @@
 <div
   data-section-id="{{ section.id }}"
   style="background-color: {{ section.settings.bg_color }}; margin-top: {{ section.settings.margin_top }}px; margin-bottom: {{ section.settings.margin_bottom }}px"
-  class="bulk-contact "
+  class="bulk-contact"
 >
-  <div class="container container-v2 bulk-contact-wrapper">
+  <div
+    class="container container-v2 bulk-contact-wrapper"
+    style="align-items: {{ section.settings.content_align }}; flex-direction: column; text-align: {{ section.settings.header_align }};"
+  >
     <div class="bulk-contact-content" style="text-align: {{ section.settings.header_align }};">
-      <h2 style="text-align: {{ section.settings.header_align }};">{{ section.settings.header_text }}</h2>
+      <h2>{{ section.settings.header_text }}</h2>
       <p style="text-align: {{ section.settings.description_align }};">{{ section.settings.description }}</p>
     </div>
-    <div style="text-align: {{ section.settings.button_align }};">
+    <div style="text-align: {{ section.settings.button_align }}; width: 100%;">
       <a href="{{ section.settings.button_link }}">
         <button class="rounded-button-light" style="border-radius: {{ section.settings.button_radius }}px;">
           {{ section.settings.btn_text }}
@@ -23,20 +26,21 @@
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
   }
+
   .bulk-contact-wrapper {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    gap: 1rem;
   }
+
   .bulk-contact-content {
     color: white;
-    flex: 1;
   }
+
   .bulk-contact-content h2 {
     font-size: 1.3rem;
     font-weight: 500;
   }
+
   .bulk-contact-content p {
     margin-bottom: 0;
     font-weight: 300;
@@ -44,7 +48,7 @@
 
   @media (max-width: 767px) {
     .bulk-contact-wrapper {
-      flex-direction: column;
+      flex-direction: column !important;
       gap: 1.5rem;
       align-items: flex-start;
     }
@@ -132,6 +136,17 @@
       ]
     },
     {
+      "type": "select",
+      "id": "content_align",
+      "label": "Overall Content Alignment",
+      "default": "flex-start",
+      "options": [
+        { "value": "flex-start", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "flex-end", "label": "Right" }
+      ]
+    },
+    {
       "type": "color",
       "id": "bg_color",
       "label": "Bg Color",
@@ -148,7 +163,8 @@
         "button_radius": 25,
         "button_align": "left",
         "header_align": "left",
-        "description_align": "left"
+        "description_align": "left",
+        "content_align": "flex-start"
       }
     }
   ]
