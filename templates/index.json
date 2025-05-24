@@ -75,7 +75,7 @@
           "settings": {
             "feature_title": "Tell Us About Your Kitchen",
             "feature_text": "<p>Take our quick <strong>AI-powered quiz</strong>—let us know your cooking habits and household size..</p>",
-            "feature_image": "shopify://shop_images/step_1_c53a29c5-5c72-46ff-9630-470cdd0094f6.png",
+            "feature_image": "shopify://shop_images/step_1.jpg",
             "feature_url": "https://section.store/",
             "hide_image": false
           }
