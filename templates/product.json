@@ -57,12 +57,20 @@
             "question": "What makes True Harvest’s oil different from refined coconut oils?",
             "answer": "<p>Unlike refined oils that use heat and chemicals, our stone-press + cold-press process operates under 40 °C and avoids solvents, preserving delicate nutrients, natural fragrance, and healthy fats for a purer, more flavorful oil.</p><p></p>"
           }
+        },
+        "text_gUK9zm": {
+          "type": "text",
+          "settings": {
+            "question": "Is True Harvest coconut oil suitable for all diets?",
+            "answer": "<p>Yes—our 100 % pure, chemical-free coconut oil is vegan, paleo, keto, and gluten-free friendly, making it a versatile staple for a wide range of dietary preferences and health goals.</p><p></p>"
+          }
         }
       },
       "block_order": [
         "text_AeRcLk",
         "text_MX3mLq",
-        "text_iP37yF"
+        "text_iP37yF",
+        "text_gUK9zm"
       ],
       "name": "SS - FAQ #1",
       "settings": {
