@@ -20,6 +20,14 @@
         "collection_layout": "full_width"
       }
     },
+    "rich_text_D7BtB4": {
+      "type": "rich-text",
+      "name": "Rich text",
+      "settings": {
+        "rich_icon_svg": "",
+        "section_title": "Wood-Pressed (Cold Press) Oils Collection"
+      }
+    },
     "section_banner_v4_GJ8LcB": {
       "type": "section-banner-v4",
       "custom_css": [
@@ -163,6 +171,7 @@
   },
   "order": [
     "section_breadcrumbs_YrCcnt",
+    "rich_text_D7BtB4",
     "section_banner_v4_GJ8LcB",
     "section_product_v4_PMyEUw",
     "section_image_slideshow_v1_xFFN7d",
