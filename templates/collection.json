@@ -159,6 +159,14 @@
         "margin_top": "",
         "margin_bottom": "60"
       }
+    },
+    "rich_text_ceEd9E": {
+      "type": "rich-text",
+      "name": "Rich text",
+      "settings": {
+        "rich_icon_svg": "<details style=\"margin:2rem 0;\">\n  <summary style=\"font-size:1.25rem;font-weight:600;cursor:pointer;\">\n    Learn More About Our Oils\n  </summary>\n  <h2>Why Choose Stone-Pressed Oils?</h2>\n  <p>Stone-pressed extraction locks in natural antioxidants, healthy fats, and authentic aroma—without heat or chemicals.</p>\n  <h2>Our Wood-Pressed Oil Varieties</h2>\n  <ul>\n    <li><a href=\"/products/wood-pressed-coconut-oil\">Coconut Oil</a></li>\n    <li><a href=\"/products/wood-pressed-groundnut-oil\">Groundnut Oil</a></li>\n    <li><a href=\"/products/wood-pressed-sesame-oil\">Sesame Oil</a></li>\n  </ul>\n  <h2>How to Use Cold-Pressed Oils</h2>\n  <p>Perfect for cooking, skin care, and nutrition—read our <a href=\"/blogs/news/cold-pressed-vs-refined-oil\">guide</a>.</p>\n</details>",
+        "section_title": ""
+      }
     }
   },
   "order": [
@@ -169,6 +177,7 @@
     "section_banner_v4_KCVG9w",
     "section_product_v4_iURAN3",
     "section_banner_v4_aFyejf",
-    "section_product_v4_6qTfpw"
+    "section_product_v4_6qTfpw",
+    "rich_text_ceEd9E"
   ]
 }
