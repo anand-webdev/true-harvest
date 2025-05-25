@@ -47,15 +47,15 @@
         "text_MX3mLq": {
           "type": "text",
           "settings": {
-            "question": "What is your refund policy?",
-            "answer": "<p>If you're not completely satisfied with your purchase, you can return it within 14 for a full refund. Please ensure the item is unused and in its original packaging.</p>"
+            "question": "How do I use True Harvest stone-pressed coconut oil in cooking and skincare?",
+            "answer": "<p>Drizzle it over salads or blend into smoothies for a nutritional boost, use it for light sautéing, or apply as a hair and skin mask to hydrate and strengthen—its MCTs and antioxidants support both culinary and cosmetic routines.</p><p></p>"
           }
         },
         "text_iP37yF": {
           "type": "text",
           "settings": {
-            "question": "How can I create headshots with AI?",
-            "answer": "<p>Need professional headshots quickly? <a href=\"https://headshots.so\">headshots.so</a>, <a href=\"https://headshots.dk\">headshots.dk</a>, <a href=\"https://headshots.se\">headshots.se</a>, and <a href=\"https://headshots.no\">headshots.no</a> make it easy to produce high-quality images in just a few minutes. Whether you’re updating your LinkedIn profile or website, these platforms help you get a polished look without any hassle.</p>"
+            "question": "What makes True Harvest’s oil different from refined coconut oils?",
+            "answer": "<p>Unlike refined oils that use heat and chemicals, our stone-press + cold-press process operates under 40 °C and avoids solvents, preserving delicate nutrients, natural fragrance, and healthy fats for a purer, more flavorful oil.</p><p></p>"
           }
         }
       },
