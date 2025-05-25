@@ -216,14 +216,14 @@
       ],
       "name": "SS - FAQ #1",
       "settings": {
-        "heading": "Learn More About Our Oils",
+        "heading": "",
         "icon_color": "#fff",
         "hover_color": "#EFEFEF",
         "question_color": "#fff",
-        "background_color": "#D5CAA6",
+        "background_color": "#294126",
         "answer_color": "#000",
         "answer_bg_color": "#fff",
-        "questions-font-size": 1.1
+        "questions-font-size": 1
       }
     }
   },
