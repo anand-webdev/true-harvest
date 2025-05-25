@@ -160,12 +160,62 @@
         "margin_bottom": "60"
       }
     },
-    "rich_text_ceEd9E": {
-      "type": "rich-text",
-      "name": "Rich text",
+    "ss_simple_faq_TEPLnE": {
+      "type": "ss-simple-faq",
+      "blocks": {
+        "text_hJntqG": {
+          "type": "text",
+          "settings": {
+            "question": "What makes True Harvest’s wood-pressed oils special?",
+            "answer": "<p>True Harvest’s wood-pressed oils are crafted using traditional stone-press methods without heat or chemicals, preserving every nutrient, aroma, and flavor. This cold-press process delivers pure, antioxidant-rich oils ideal for cooking, skin care, and overall wellness.</p>"
+          }
+        },
+        "text_Lgrtjq": {
+          "type": "text",
+          "settings": {
+            "question": "How do stone-pressed and cold-press oils differ?",
+            "answer": "<p>“Stone-pressed” refers to the slow, mechanical pressing between mills, while “cold-press” emphasizes maintaining low temperatures (&lt;40 °C). Together, they ensure your oil retains maximum vitamins, healthy fats, and natural fragrance—unlike refined oils that lose benefits to heat.</p>"
+          }
+        },
+        "text_6BJ3rH": {
+          "type": "text",
+          "settings": {
+            "question": "What are the health benefits of wood-pressed oils?",
+            "answer": "<p>Wood-pressed oils are rich in essential fatty acids, antioxidants, and phytonutrients that support heart health, reduce inflammation, and nourish skin & hair. Regular use can aid digestion, boost immunity, and promote glowing skin when included in your daily diet or beauty routine.</p>"
+          }
+        },
+        "text_tRVTte": {
+          "type": "text",
+          "settings": {
+            "question": " How should I use True Harvest cold-press oils?",
+            "answer": "<p>Use wood-pressed oils for light sautéing, salad dressings, and drizzling over finished dishes to preserve their delicate flavors. They also make a nourishing base for face masks, hair treatments, and DIY skincare recipes—unlocking both culinary and cosmetic benefits.</p>"
+          }
+        },
+        "text_XKdFwf": {
+          "type": "text",
+          "settings": {
+            "question": "Where can I buy wood-pressed oils near me?",
+            "answer": "<p>You can purchase our entire range—Sesame, Coconut, and Groundnut wood-pressed oils—directly on True Harvest’s website with nationwide delivery across India. Simply select “Ship to my address” at checkout</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_hJntqG",
+        "text_Lgrtjq",
+        "text_6BJ3rH",
+        "text_tRVTte",
+        "text_XKdFwf"
+      ],
+      "name": "SS - FAQ #1",
       "settings": {
-        "rich_icon_svg": "<details style=\"margin:2rem 0;\">\n  <summary style=\"font-size:1.25rem;font-weight:600;cursor:pointer;\">\n    Learn More About Our Oils\n  </summary>\n  <h2>Why Choose Stone-Pressed Oils?</h2>\n  <p>Stone-pressed extraction locks in natural antioxidants, healthy fats, and authentic aroma—without heat or chemicals.</p>\n  <h2>Our Wood-Pressed Oil Varieties</h2>\n  <ul>\n    <li><a href=\"/products/wood-pressed-coconut-oil\">Coconut Oil</a></li>\n    <li><a href=\"/products/wood-pressed-groundnut-oil\">Groundnut Oil</a></li>\n    <li><a href=\"/products/wood-pressed-sesame-oil\">Sesame Oil</a></li>\n  </ul>\n  <h2>How to Use Cold-Pressed Oils</h2>\n  <p>Perfect for cooking, skin care, and nutrition—read our <a href=\"/blogs/news/cold-pressed-vs-refined-oil\">guide</a>.</p>\n</details>",
-        "section_title": ""
+        "heading": "Learn More About Our Oils",
+        "icon_color": "#fff",
+        "hover_color": "#EFEFEF",
+        "question_color": "#fff",
+        "background_color": "#D5CAA6",
+        "answer_color": "#000",
+        "answer_bg_color": "#fff",
+        "questions-font-size": 1.1
       }
     }
   },
@@ -178,6 +228,6 @@
     "section_product_v4_iURAN3",
     "section_banner_v4_aFyejf",
     "section_product_v4_6qTfpw",
-    "rich_text_ceEd9E"
+    "ss_simple_faq_TEPLnE"
   ]
 }
