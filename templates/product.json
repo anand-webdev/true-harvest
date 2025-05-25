@@ -33,9 +33,52 @@
         "ena_featured_icon": true,
         "display_feaicon": "dis_svg"
       }
+    },
+    "ss_simple_faq_kHEWbA": {
+      "type": "ss-simple-faq",
+      "blocks": {
+        "text_AeRcLk": {
+          "type": "text",
+          "settings": {
+            "question": "What is cold-pressed coconut oil and how does True Harvest’s stone-pressed method preserve its nutrients?",
+            "answer": "<p>Cold-pressed coconut oil is extracted at low temperatures (&lt;40 °C) to retain delicate fatty acids and antioxidants. True Harvest goes further by using traditional stone-pressed mills, gently crushing fresh coconuts and sun-drying them under muslin cloth before bottling. This dual “cold-press” + “stone-press” process locks in MCTs, vitamins, and natural aroma—giving you pure, nutrient-rich oil ideal for cooking, skin care, and overall wellness.</p>"
+          }
+        },
+        "text_MX3mLq": {
+          "type": "text",
+          "settings": {
+            "question": "What is your refund policy?",
+            "answer": "<p>If you're not completely satisfied with your purchase, you can return it within 14 for a full refund. Please ensure the item is unused and in its original packaging.</p>"
+          }
+        },
+        "text_iP37yF": {
+          "type": "text",
+          "settings": {
+            "question": "How can I create headshots with AI?",
+            "answer": "<p>Need professional headshots quickly? <a href=\"https://headshots.so\">headshots.so</a>, <a href=\"https://headshots.dk\">headshots.dk</a>, <a href=\"https://headshots.se\">headshots.se</a>, and <a href=\"https://headshots.no\">headshots.no</a> make it easy to produce high-quality images in just a few minutes. Whether you’re updating your LinkedIn profile or website, these platforms help you get a polished look without any hassle.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_AeRcLk",
+        "text_MX3mLq",
+        "text_iP37yF"
+      ],
+      "name": "SS - FAQ #1",
+      "settings": {
+        "heading": "FAQ",
+        "icon_color": "#0b0909",
+        "hover_color": "#111111",
+        "question_color": "#111111",
+        "background_color": "rgba(0,0,0,0)",
+        "answer_color": "#000",
+        "answer_bg_color": "rgba(0,0,0,0)",
+        "questions-font-size": 1.2
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "ss_simple_faq_kHEWbA"
   ]
 }
