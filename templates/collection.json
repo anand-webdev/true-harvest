@@ -197,6 +197,13 @@
             "question": "Where can I buy wood-pressed oils near me?",
             "answer": "<p>You can purchase our entire range—Sesame, Coconut, and Groundnut wood-pressed oils—directly on True Harvest’s website with nationwide delivery across India. Simply select “Ship to my address” at checkout</p>"
           }
+        },
+        "text_JMQcBx": {
+          "type": "text",
+          "settings": {
+            "question": "How fresh are True Harvest stone-pressed oils?",
+            "answer": "<p>Every bottle of True Harvest stone-pressed oil is pressed the same day, then sun-dried under muslin cloth for 7 days to remove moisture naturally, before being carefully packed to lock in farm-fresh flavor and nutrients.</p>"
+          }
         }
       },
       "block_order": [
@@ -204,7 +211,8 @@
         "text_Lgrtjq",
         "text_6BJ3rH",
         "text_tRVTte",
-        "text_XKdFwf"
+        "text_XKdFwf",
+        "text_JMQcBx"
       ],
       "name": "SS - FAQ #1",
       "settings": {
