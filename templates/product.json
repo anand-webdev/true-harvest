@@ -40,22 +40,22 @@
         "text_AeRcLk": {
           "type": "text",
           "settings": {
-            "question": "What is cold-pressed coconut oil and how does True Harvest’s stone-pressed method preserve its nutrients?",
-            "answer": "<p>Cold-pressed coconut oil is extracted at low temperatures (&lt;40 °C) to retain delicate fatty acids and antioxidants. True Harvest goes further by using traditional stone-pressed mills, gently crushing fresh coconuts and sun-drying them under muslin cloth before bottling. This dual “cold-press” + “stone-press” process locks in MCTs, vitamins, and natural aroma—giving you pure, nutrient-rich oil ideal for cooking, skin care, and overall wellness.</p>"
+            "question": "What’s the difference between refined and True Harvest’s stone-pressed oils?",
+            "answer": "<p>Refined oils are typically extracted at high heat (up to 100 °C) using solvents, stripping flavour, aroma, and nutrients—and even creating trans-fats. True Harvest’s stone-pressed, cold-press process gently grinds seeds below 40 °C, preserving every antioxidant, vitamin, and natural fragrance for a pure, heart-healthy oil.</p>"
           }
         },
         "text_MX3mLq": {
           "type": "text",
           "settings": {
-            "question": "How do I use True Harvest stone-pressed coconut oil in cooking and skincare?",
-            "answer": "<p>Drizzle it over salads or blend into smoothies for a nutritional boost, use it for light sautéing, or apply as a hair and skin mask to hydrate and strengthen—its MCTs and antioxidants support both culinary and cosmetic routines.</p><p></p>"
+            "question": "Why is True Harvest’s wood-pressed oil more expensive?",
+            "answer": "<p>We use traditional wooden Kolhu mills for a “first-press” stone-press process—crushing raw seeds only once, without solvents or bleaching. This slow, artisanal method locks in genuine flavour, aroma, and nutrients, making our oils more costly to produce but far richer in health benefits and taste.</p>"
           }
         },
         "text_iP37yF": {
           "type": "text",
           "settings": {
-            "question": "What makes True Harvest’s oil different from refined coconut oils?",
-            "answer": "<p>Unlike refined oils that use heat and chemicals, our stone-press + cold-press process operates under 40 °C and avoids solvents, preserving delicate nutrients, natural fragrance, and healthy fats for a purer, more flavorful oil.</p><p></p>"
+            "question": "How does “cold-press” differ from “virgin” coconut oil?",
+            "answer": "<p>Both virgin and cold-press methods avoid chemicals, but the feedstock differs: virgin coconut oil comes from fresh coconut milk, while our stone-pressed cold-press uses dried, flaked flesh for a slightly richer texture. Either way, you get unrefined, nutrient-dense oil ideal for cooking and skincare.</p>"
           }
         },
         "text_gUK9zm": {
@@ -64,13 +64,29 @@
             "question": "Is True Harvest coconut oil suitable for all diets?",
             "answer": "<p>Yes—our 100 % pure, chemical-free coconut oil is vegan, paleo, keto, and gluten-free friendly, making it a versatile staple for a wide range of dietary preferences and health goals.</p><p></p>"
           }
+        },
+        "text_4K6YxR": {
+          "type": "text",
+          "settings": {
+            "question": "Can True Harvest’s stone-pressed coconut oil be used for oil pulling?",
+            "answer": "<p>Absolutely—our 100 % natural, preservative-free coconut oil is ideal for oil pulling. Rich in antimicrobial fatty acids, it gently detoxifies and freshens, leaving gums and teeth healthier without any harsh chemicals.</p>"
+          }
+        },
+        "text_D9dXfn": {
+          "type": "text",
+          "settings": {
+            "question": "What are the best uses for True Harvest’s cold-press oils?",
+            "answer": "<p></p><ul><li><strong>Culinary:</strong> Drizzle on salads, stir into smoothies, or use for light sautéing to enjoy pure flavour and nutrients.</li><li><strong>Skincare & Haircare:</strong> Massage as a hair mask or apply as a moisturiser—its antioxidants soothe, nourish, and protect.</li><li><strong>Wellness:</strong> Take a spoonful daily to support digestion, immunity, and healthy fats intake.</li></ul><p></p>"
+          }
         }
       },
       "block_order": [
         "text_AeRcLk",
         "text_MX3mLq",
         "text_iP37yF",
-        "text_gUK9zm"
+        "text_gUK9zm",
+        "text_4K6YxR",
+        "text_D9dXfn"
       ],
       "name": "SS - FAQ #1",
       "settings": {
