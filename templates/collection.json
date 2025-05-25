@@ -9,15 +9,32 @@
  */
 {
   "sections": {
-    "section_breadcrumbs_YrCcnt": {
-      "type": "section-breadcrumbs",
+    "ss_text_block_rBkA4z": {
+      "type": "ss-text-block",
+      "blocks": {
+        "text_eLMzGD": {
+          "type": "text",
+          "settings": {
+            "heading": "<p><strong>Wood-Pressed (Cold Press) Oils Collection</strong></p>",
+            "color": "#121212",
+            "font_size": 30,
+            "richtext": "",
+            "richtext_color": "#121212",
+            "richtext_font_size": 14
+          }
+        }
+      },
+      "block_order": [
+        "text_eLMzGD"
+      ],
+      "name": "SS - Text block",
       "settings": {
-        "select_style_bread": "style_1",
-        "ena_bg_img": true,
-        "bg_breadcrumb": "shopify://shop_images/Untitled_design_1.png",
-        "bg_color_breadcrumb": "#ffffff",
-        "color_breadcrumb": "#000000",
-        "collection_layout": "full_width"
+        "padding_header": 10,
+        "padding_button": 10,
+        "background-color": "#bed5b8",
+        "padding_top": 32,
+        "padding_bottom": 8,
+        "section-width": 120
       }
     },
     "section_banner_v4_GJ8LcB": {
@@ -217,18 +234,18 @@
       "name": "SS - FAQ #1",
       "settings": {
         "heading": "Why True Harvest?",
-        "icon_color": "#fff",
-        "hover_color": "#EFEFEF",
-        "question_color": "#fff",
+        "icon_color": "#ffffff",
+        "hover_color": "#efefef",
+        "question_color": "#ffffff",
         "background_color": "#294126",
-        "answer_color": "#000",
-        "answer_bg_color": "#fff",
+        "answer_color": "#000000",
+        "answer_bg_color": "#ffffff",
         "questions-font-size": 1
       }
     }
   },
   "order": [
-    "section_breadcrumbs_YrCcnt",
+    "ss_text_block_rBkA4z",
     "section_banner_v4_GJ8LcB",
     "section_product_v4_PMyEUw",
     "section_image_slideshow_v1_xFFN7d",
