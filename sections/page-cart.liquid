@@ -8,6 +8,9 @@
   <div class="container container-v1">
     {% include 'breadcrumb' %}
   </div>
+  <div class="container container-v1">
+    <div class="shiprocket-headless" data-type="cart"></div>
+  </div>
 </div>
 <section class="page-cart">
   <div class="content-pages">
@@ -32,9 +35,9 @@
                       {% for item in cart.items %}
                         <tr class="cart_item">
                           <td data-label="Product Name" class="product-thumbnail">
-                            <a href="{{ item.url }}"
-                              ><img src="{{ item | img_url: 'small' }}" alt="{{ item.title | escape }}"
-                            ></a>
+                            <a href="{{ item.url }}">
+                              <img src="{{ item | img_url: 'small' }}" alt="{{ item.title | escape }}">
+                            </a>
                           </td>
                           <td class="product-name-thumb" data-title="Product">
                             <a href="{{ item.url }}">{{ item.product.title }}</a>
@@ -62,18 +65,8 @@
                           </td>
                           <td class="product-remove">
                             <a class="remove set-12-svg" href="/cart/change?line={{ forloop.index }}&amp;quantity=0">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink"
-                                version="1.1"
-                                id="Capa_1"
-                                x="0px"
-                                y="0px"
-                                viewBox="0 0 298.667 298.667"
-                                style="enable-background:new 0 0 298.667 298.667;"
-                                xml:space="preserve"
-                              >
-                                <g> <g> <polygon points="298.667,30.187 268.48,0 149.333,119.147 30.187,0 0,30.187 119.147,149.333 0,268.48 30.187,298.667     149.333,179.52 268.48,298.667 298.667,268.48 179.52,149.333   "></polygon> </g> </g>
+                              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 298.667 298.667">
+                                <g><polygon points="298.667,30.187 268.48,0 149.333,119.147 30.187,0 0,30.187 119.147,149.333 0,268.48 30.187,298.667 149.333,179.52 268.48,298.667 298.667,268.48 179.52,149.333" /></g>
                               </svg>
                             </a>
                           </td>
@@ -102,11 +95,7 @@
                         <span>{{ 'cart.label.total' | t }}</span>
                       </th>
                       <td class="cart-amount">
-                        <span
-                          ><strong
-                            ><span class="amount">{{ cart.total_price | money }}</span></strong
-                          >
-                        </span>
+                        <span><strong><span class="amount">{{ cart.total_price | money }}</span></strong></span>
                       </td>
                     </tr>
                   </tbody>
@@ -127,7 +116,6 @@
       </div>
     </div>
   </div>
-  <!-- End Content Pages -->
 
   <!-- Injected JS to auto-fill cart via ?items=... -->
   <script>
