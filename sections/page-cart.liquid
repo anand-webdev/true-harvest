@@ -113,25 +113,6 @@
                 </table>
                 <div class="wc-proceed-to-checkout clearfix">
                   <div class="shiprocket-headless" data-type="cart"></div>
-                  <!--
-                    <script>
-                        if(Intl.DateTimeFormat().resolvedOptions().timeZone === "Asia/Calcutta") {
-                          document.write('<div class="shiprocket-headless" data-type="cart"></div>')
-                        }
-
-
-                                          else{
-                                           if(Intl.DateTimeFormat().resolvedOptions().timeZone === "Asia/Kolkata") {
-                          document.write('<div class="shiprocket-headless" data-type="cart"></div>')
-                        }
-                                          else{ document.write('<button class="checkout-button button alt wc-forward bg-color"  type="submit" name="checkout" id="checkout" > checkout </button>')
-                                            }
-                                            }
-                    </script>
-                  -->
-                  <!--
-                    <a class="checkout-button button alt wc-forward bg-color" href="/checkout">{{ 'cart.general.checkout' | t }}</a>
-                  -->
                 </div>
               </div>
             </div>
@@ -147,6 +128,38 @@
     </div>
   </div>
   <!-- End Content Pages -->
+
+  <!-- Injected JS to auto-fill cart via ?items=... -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const params = new URLSearchParams(window.location.search);
+      const itemsParam = params.get("items");
+
+      if (itemsParam) {
+        const items = itemsParam.split(',').map(entry => {
+          const [id, qty] = entry.split(':');
+          return { id: Number(id), quantity: Number(qty) };
+        });
+
+        if (!sessionStorage.getItem('cartPrefilled')) {
+          sessionStorage.setItem('cartPrefilled', 'true');
+
+          fetch('/cart/clear.js', { method: 'POST' })
+            .then(() => {
+              return fetch('/cart/add.js', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ items })
+              });
+            })
+            .then(() => {
+              const cleanUrl = window.location.origin + window.location.pathname;
+              window.location.replace(cleanUrl);
+            });
+        }
+      }
+    });
+  </script>
 </section>
 {% schema %}
 {
