@@ -8,10 +8,16 @@
   <div class="container container-v1">
     {% include 'breadcrumb' %}
   </div>
-  <div class="container container-v1">
-    <div class="shiprocket-headless" data-type="cart"></div>
+
+  <!-- Top Shiprocket Buy Now Button -->
+  <div class="container container-v1 pb-0">
+    <div class="w-full my-3">
+      <div class="shiprocket-headless" data-type="cart" style="width: 100%; display: flex; justify-content: center;"></div>
+    </div>
+    <hr class="my-2 border-t border-gray-200">
   </div>
 </div>
+
 <section class="page-cart">
   <div class="content-pages">
     <div class="container container-v1">
@@ -78,7 +84,7 @@
               </table>
             </div>
 
-            <div class="cart_totals ">
+            <div class="cart_totals">
               <div class="cart-update">
                 <input type="submit" value="{{ 'cart.general.update' | t }}" name="update_cart" class="button bg-color">
               </div>
@@ -107,9 +113,6 @@
             </div>
           </form>
         {% else %}
-          {% comment %}
-            The cart is empty
-          {% endcomment %}
           <p>{{ 'cart.general.empty' | t }}</p>
           <p>{{ 'cart.general.continue_browsing_html' | t }}</p>
         {% endif %}
@@ -149,6 +152,7 @@
     });
   </script>
 </section>
+
 {% schema %}
 {
   "name": "Cart Page",
