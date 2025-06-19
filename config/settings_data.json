@@ -6117,6 +6117,14 @@
         "settings": {
           "title": "Happy Clients"
         }
+      },
+      "wsp-whatsapp": {
+        "type": "wsp-whatsapp",
+        "settings": {
+          "show_whatsapp": true,
+          "whatsapp_number": "+918056508215",
+          "whatsapp_msg": "🌿 Hello from True Harvest! Thanks for dropping by – you’ve reached the home of India’s purest cold-pressed oils. 🥥🌰 How can we add a dash of health and flavor to your kitchen today?"
+        }
       }
     },
     "content_for_index": [
