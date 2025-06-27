@@ -6148,6 +6148,11 @@
         "type": "shopify://apps/instant/blocks/instant_core/927e19d9-4e68-41db-99c7-d8debdc1f80d",
         "disabled": true,
         "settings": {}
+      },
+      "7860399670564181960": {
+        "type": "shopify://apps/profy-banner-countdown-timer/blocks/app_embed/243a639f-ca73-4afe-b6aa-3a23277fb424",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
