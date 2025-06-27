@@ -15,7 +15,7 @@
     "default_currency": "USD",
     "bg_color_body": "#fbf6f0",
     "bg_image_body": "",
-    "enable_promo_topbar": true,
+    "enable_promo_topbar": false,
     "background_promo": "shopify://shop_images/Rectangle_21.svg",
     "color_content_promo_topbar": "#fff",
     "content_promo_topbar": "Get free shipping for order over Rs. 1299",
