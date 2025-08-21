@@ -428,6 +428,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     {% endunless %}
              {% render 'kwikpass' %}
     {% section "wsp-whatsapp" %}
+    <script>
+document.addEventListener('DOMContentLoaded', function () {
+  var n = document.body.firstChild;
+  if (n && n.nodeType === Node.TEXT_NODE &&
+      n.textContent.includes('preload') &&
+      n.textContent.includes('push_filter_left')) {
+    n.textContent = '';
+  }
+});
+</script>
   </body>
  
 </html>
