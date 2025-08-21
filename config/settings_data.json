@@ -15,10 +15,10 @@
     "default_currency": "USD",
     "bg_color_body": "#fbf6f0",
     "bg_image_body": "",
-    "enable_promo_topbar": false,
+    "enable_promo_topbar": true,
     "background_promo": "shopify://shop_images/Rectangle_21.svg",
     "color_content_promo_topbar": "#fff",
-    "content_promo_topbar": "Get free shipping for order over Rs. 1299",
+    "content_promo_topbar": "Get free shipping for order over Rs. 1499",
     "text_btn_promo": "Shop Now",
     "url_btn_promo": "shopify://collections/wood-pressed-oils",
     "ena_popup_news": false,
@@ -6147,11 +6147,6 @@
       "1656560654682496077": {
         "type": "shopify://apps/instant/blocks/instant_core/927e19d9-4e68-41db-99c7-d8debdc1f80d",
         "disabled": true,
-        "settings": {}
-      },
-      "7860399670564181960": {
-        "type": "shopify://apps/profy-banner-countdown-timer/blocks/app_embed/243a639f-ca73-4afe-b6aa-3a23277fb424",
-        "disabled": false,
         "settings": {}
       }
     }
