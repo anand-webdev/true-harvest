@@ -181,15 +181,15 @@ src="https://www.facebook.com/tr?id=1896233511122590&ev=PageView&noscript=1"
     Add the page template as a class for easy page or template specific styling.
   {% endcomment %}
   <body
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6NW43NJ"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
     class="{% if settings.enable_rtl_mode %}rtl{% endif %} preload push_filter_left js_overhidden relative"
     {% if settings.bg_color_body != blank %}
       style="background: {{settings.bg_color_body}};"
     {% endif %}
   >
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6NW43NJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
     <div class="wrap">
       <div class="contentbody">
         {% if settings.enable_promo_topbar %}
@@ -428,16 +428,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     {% endunless %}
              {% render 'kwikpass' %}
     {% section "wsp-whatsapp" %}
-    <script>
-document.addEventListener('DOMContentLoaded', function () {
-  var n = document.body.firstChild;
-  if (n && n.nodeType === Node.TEXT_NODE &&
-      n.textContent.includes('preload') &&
-      n.textContent.includes('push_filter_left')) {
-    n.textContent = '';
-  }
-});
-</script>
   </body>
  
 </html>
